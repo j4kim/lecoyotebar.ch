@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="fr">
+<html
+    lang="fr"
+    class="scheme-dark dark"
+>
 
 <head>
     <meta charset="utf-8" />
@@ -37,6 +40,7 @@
         </nav>
     </header>
     {{ $slot }}
+    <div class="h-[200vh]"></div>
 </body>
 
 </html>
