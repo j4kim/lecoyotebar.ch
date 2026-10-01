@@ -1,7 +1,7 @@
 <header class="flex items-center gap-8 p-4">
     <a href="/">
         <img
-            src="{{ asset('icon.svg') }}"
+            src="{{ asset('logo.svg') }}"
             class="h-20"
         >
     </a>
