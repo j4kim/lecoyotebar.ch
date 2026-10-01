@@ -1,10 +1,4 @@
-# Laravel + Filament + Tailwind + Alpine Starter Kit
-
-## Install
-
-```
-composer create-project j4kim/lfta {project-name}
-```
+# Coyote Bar
 
 ## Setup
 
