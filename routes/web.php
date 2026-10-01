@@ -4,14 +4,13 @@ use App\Models\Page;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    $homePage = Page::firstWhere('name', 'home');
-    return $homePage ? view('page', ['page' => $homePage]) : view('home.index');
+    $homePage = Page::where('name', 'home')->firstOrFail();
+    return view('page', ['page' => $homePage]);
 })->name('home');
 
-Route::get('/page/{name}', function (String $name) {
-    return view('page', [
-        'page' => Page::where('name', $name)->firstOrFail()
-    ]);
+Route::get('/page/{name}', function (string $name) {
+    $page = Page::where('name', $name)->firstOrFail();
+    return view('page', ['page' => $page]);
 })->name('page');
 
 Route::get('/login', function () {
