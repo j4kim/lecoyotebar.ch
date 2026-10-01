@@ -28,19 +28,7 @@
 </head>
 
 <body @class([App::environment(), 'debug' => config('app.debug')])>
-    <header class="relative z-30 flex items-center gap-8 p-4">
-        <a href="/">
-            <img
-                src="{{ asset('icon.svg') }}"
-                class="h-20"
-            >
-        </a>
-        <nav class="flex flex-wrap items-center gap-2">
-            <x-navlink routeName="home">{{ config('app.name') }}</x-navlink>
-        </nav>
-    </header>
     {{ $slot }}
-    <div class="h-[200vh]"></div>
 </body>
 
 </html>
