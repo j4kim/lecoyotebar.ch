@@ -1,8 +1,8 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "j4kim/lfta",
+    "name": "j4kim/lecoyotebar.ch",
     "type": "project",
-    "description": "Website for Atelier Honorin",
+    "description": "Site pour le Coyote Bar",
     "keywords": [
         "laravel",
         "framework"
