@@ -1,1 +1,1 @@
-<div class="animated-gradient-background h-svh w-full"></div>
+<x-video-background src="silentparty.mp4"></x-video-background>
