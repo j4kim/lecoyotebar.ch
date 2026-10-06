@@ -8,6 +8,7 @@ use Filament\Forms\Components\MarkdownEditor;
 use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Utilities\Get;
 use Filament\Schemas\Schema;
 
@@ -29,8 +30,14 @@ class PageForm
                 Repeater::make('blocks')
                     ->schema([
                         TextInput::make('name'),
-                        Select::make('template')->options(BlockTemplate::class),
-                        MarkdownEditor::make('content')->columnSpanFull(),
+                        Select::make('template')->options(BlockTemplate::class)->live(),
+                        Grid::make()
+                            ->schema(function (Get $get): array {
+                                /** @var BlockTemplate $blockTemplate */
+                                $blockTemplate = $get('template');
+                                return $blockTemplate->getSchema();
+                            })
+                            ->columnSpanFull(),
                     ])
                     ->columns(2)
                     ->collapsed()
