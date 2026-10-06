@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Enums\BlockTemplate;
 use App\Models\Enums\PageTemplate;
 use App\Models\Page;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -23,13 +24,13 @@ class PageSeeder extends Seeder
             'blocks' => [
                 [
                     "name" => "heading",
-                    "content" => "<x-heading></x-heading>",
-                    "template" => "custom",
+                    "template" => BlockTemplate::Heading->value,
+                    "video" => "01M49ND89YSKCZG78TPBCKQ6TV.mp4",
                 ],
                 [
                     "name" => "menu",
+                    "template" => BlockTemplate::Custom->value,
                     "content" => "<x-menu></x-menu>",
-                    "template" => "custom",
                 ],
             ]
         ]);
