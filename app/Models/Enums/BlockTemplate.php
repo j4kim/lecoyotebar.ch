@@ -2,9 +2,10 @@
 
 namespace App\Models\Enums;
 
+use Filament\Forms\Components\CodeEditor;
+use Filament\Forms\Components\CodeEditor\Enums\Language;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\MarkdownEditor;
-use Filament\Forms\Components\Textarea;
 
 enum BlockTemplate: string
 {
@@ -16,10 +17,13 @@ enum BlockTemplate: string
     {
         return match ($this) {
             self::Content => [
-                MarkdownEditor::make('content')->columnSpanFull(),
+                MarkdownEditor::make('content')
+                    ->columnSpanFull(),
             ],
             self::Custom => [
-                Textarea::make('content')->columnSpanFull(),
+                CodeEditor::make('content')
+                    ->language(Language::Html)
+                    ->columnSpanFull(),
             ],
             self::Heading => [
                 FileUpload::make('video')
