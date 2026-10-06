@@ -15,7 +15,7 @@
 
         @if ($page->template)
             @php
-                $component = 'page-layouts.' . $page->template->value;
+                $component = 'page-templates.' . $page->template->value;
             @endphp
             <x-dynamic-component
                 :component="$component"
