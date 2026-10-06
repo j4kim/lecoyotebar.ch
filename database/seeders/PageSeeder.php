@@ -19,10 +19,19 @@ class PageSeeder extends Seeder
         Page::create([
             'name' => 'home',
             'title' => config('app.name'),
-            'content' => <<<MD
-                Site en construction
-                MD,
-            'template' => PageTemplate::Simple,
+            'template' => PageTemplate::Blocks,
+            'blocks' => [
+                [
+                    "name" => "heading",
+                    "content" => "<x-heading></x-heading>",
+                    "template" => "custom",
+                ],
+                [
+                    "name" => "menu",
+                    "content" => "<x-menu></x-menu>",
+                    "template" => "custom",
+                ],
+            ]
         ]);
     }
 }
