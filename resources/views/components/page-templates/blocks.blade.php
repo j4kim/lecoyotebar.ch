@@ -2,13 +2,13 @@
 
 @foreach ($page->blocks as $block)
     @php
-        $bladeTemplate = str($block['content'])->markdown()->toString();
-        $renderedContent = Blade::render($bladeTemplate);
+        $template = $block['template'] ?? 'content';
+        $component = "block-templates.$template";
     @endphp
-    <div
+
+    <x-dynamic-component
         id="block-{{ $block['name'] }}"
-        class="prose dark:prose-invert"
-    >
-        {!! $renderedContent !!}
-    </div>
+        :component="$component"
+        :content="$block['content']"
+    />
 @endforeach

@@ -8,7 +8,6 @@
         id="page-{{ $page->id }}"
         data-name="{{ $page->name }}"
     >
-
         @php
             $html = str($page->content)->markdown()->sanitizeHtml();
         @endphp

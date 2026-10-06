@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\Pages\Schemas;
 
+use App\Models\Enums\BlockTemplate;
 use App\Models\Enums\PageTemplate;
 use Filament\Forms\Components\MarkdownEditor;
 use Filament\Forms\Components\Repeater;
@@ -28,8 +29,10 @@ class PageForm
                 Repeater::make('blocks')
                     ->schema([
                         TextInput::make('name'),
-                        MarkdownEditor::make('content')
+                        Select::make('template')->options(BlockTemplate::class),
+                        MarkdownEditor::make('content')->columnSpanFull(),
                     ])
+                    ->columns(2)
                     ->collapsed()
                     ->itemLabel(fn(array $state) => $state['name'])
                     ->reorderable()
