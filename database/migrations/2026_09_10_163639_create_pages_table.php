@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('title')->nullable();
             $table->text('content')->nullable();
             $table->string('template')->nullable();
+            $table->json('blocks')->nullable();
         });
     }
 

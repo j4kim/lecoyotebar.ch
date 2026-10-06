@@ -4,9 +4,10 @@ namespace App\Filament\Resources\Pages\Schemas;
 
 use App\Models\Enums\PageTemplate;
 use Filament\Forms\Components\MarkdownEditor;
+use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Textarea;
+use Filament\Schemas\Components\Utilities\Get;
 use Filament\Schemas\Schema;
 
 class PageForm
@@ -17,11 +18,23 @@ class PageForm
             ->components([
                 TextInput::make('name')
                     ->required(),
-                MarkdownEditor::make('content')
-                    ->columnSpanFull(),
                 TextInput::make('title'),
                 Select::make('template')
-                    ->options(PageTemplate::class),
+                    ->options(PageTemplate::class)
+                    ->live(),
+                MarkdownEditor::make('content')
+                    ->columnSpanFull()
+                    ->hidden(fn(Get $get) => $get('template') === PageTemplate::Blocks),
+                Repeater::make('blocks')
+                    ->schema([
+                        TextInput::make('name'),
+                        MarkdownEditor::make('content')
+                    ])
+                    ->collapsed()
+                    ->itemLabel(fn(array $state) => $state['name'])
+                    ->reorderable()
+                    ->columnSpanFull()
+                    ->visible(fn(Get $get) => $get('template') === PageTemplate::Blocks)
             ]);
     }
 }
