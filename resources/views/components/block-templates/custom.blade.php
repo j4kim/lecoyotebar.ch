@@ -1,8 +1,9 @@
-@props(['content'])
+@props(['block'])
 
 @php
-    $bladeTemplate = str($content)->markdown()->toString();
-    $renderedContent = Blade::render($bladeTemplate);
+    $renderedContent = Blade::render($block['content']);
 @endphp
 
+<!-- START custom block {{ $block['name'] }} -->
 {!! $renderedContent !!}
+<!-- END custom block {{ $block['name'] }} -->

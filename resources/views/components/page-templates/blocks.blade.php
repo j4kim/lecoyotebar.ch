@@ -9,6 +9,6 @@
     <x-dynamic-component
         id="block-{{ $block['name'] }}"
         :component="$component"
-        :content="$block['content']"
+        :block="$block"
     />
 @endforeach

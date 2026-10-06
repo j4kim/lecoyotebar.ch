@@ -1,7 +1,7 @@
-@props(['content'])
+@props(['block'])
 
 @php
-    $html = str($content)->markdown()->sanitizeHtml();
+    $html = str($block['content'])->markdown()->sanitizeHtml();
 @endphp
 
 <div class="prose dark:prose-invert">
