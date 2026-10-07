@@ -34,7 +34,7 @@ enum BlockTemplate: string
                     ->acceptedFileTypes(['video/*']),
             ],
             self::Gallery => [
-                FileUpload::make('attachments')->multiple()
+                FileUpload::make('images')->multiple()
                     ->disk('public')
                     ->reorderable()
                     ->panelLayout('grid')
