@@ -24,13 +24,13 @@ class PageSeeder extends Seeder
             'blocks' => [
                 [
                     "name" => "heading",
-                    "template" => BlockTemplate::Heading->value,
+                    "template" => BlockTemplate::Heading,
                     "video" => "01M49ND89YSKCZG78TPBCKQ6TV.mp4",
                 ],
                 [
                     "name" => "menu",
-                    "template" => BlockTemplate::Custom->value,
-                    "content" => "<x-menu></x-menu>",
+                    "template" => BlockTemplate::Custom,
+                    "content" => "<x-atoms.menu/>",
                 ],
             ]
         ]);

@@ -1,4 +1,4 @@
-<x-layout>
+<x-main-layouts.layout>
     <x-slot:title>
         {{ $page->title }}
     </x-slot>
@@ -27,4 +27,4 @@
         @endif
     </div>
 
-</x-layout>
+</x-main-layouts.layout>
