@@ -4,8 +4,8 @@ namespace Database\Seeders;
 
 require_once __DIR__ . '/content.php';
 
-use App\Models\Enums\BlockTemplate;
-use App\Models\Enums\PageTemplate;
+use App\Enums\BlockTemplate;
+use App\Enums\PageTemplate;
 use App\Models\Page;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;

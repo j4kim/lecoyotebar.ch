@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Enums;
+namespace App\Enums;
 
 use App\Models\Gallery;
 use Filament\Forms\Components\CodeEditor;
