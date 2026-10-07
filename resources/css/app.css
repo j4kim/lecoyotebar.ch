@@ -11,47 +11,22 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* LOGO ANIMATION */
+
 svg.animated-logo * {
     transform-origin: center;
     transform-box: fill-box;
     animation-fill-mode: both;
 }
+
+/* circles */
+
 svg.animated-logo #graphics #circles path {
     animation: appear 3s ease-in 1s both;
 }
+
 svg.animated-logo #graphics #circles path#outer-circle {
     animation-delay: 2s;
-}
-
-svg.animated-logo #graphics > path {
-    animation-name: rotateCw;
-    animation-duration: 2s;
-    animation-delay: 3s;
-}
-
-svg.animated-logo #graphics > path#bar-right {
-    animation-name: rotateCcw;
-}
-
-svg.animated-logo #graphics #darts {
-    animation-name: darts;
-    animation-duration: 1s;
-}
-
-svg.animated-logo #graphics #darts > g {
-    transform-box: view-box;
-    animation-duration: 1.5s;
-    animation-delay: 0.5s;
-}
-
-svg.animated-logo #graphics #darts > g#dart-1 {
-    animation-name: dart1;
-    transform-origin: 305px 325px;
-}
-
-svg.animated-logo #graphics #darts > g#dart-3 {
-    animation-name: dart3;
-    transform-origin: 297px 324px;
 }
 
 @keyframes appear {
@@ -61,6 +36,18 @@ svg.animated-logo #graphics #darts > g#dart-3 {
     to {
         opacity: 1;
     }
+}
+
+/* bars */
+
+svg.animated-logo #graphics > path {
+    animation-name: rotateCw;
+    animation-duration: 2s;
+    animation-delay: 3s;
+}
+
+svg.animated-logo #graphics > path#bar-right {
+    animation-name: rotateCcw;
 }
 
 @keyframes rotateCw {
@@ -85,9 +72,32 @@ svg.animated-logo #graphics #darts > g#dart-3 {
     }
 }
 
+/* darts */
+
+svg.animated-logo #graphics #darts {
+    animation-name: darts;
+    animation-duration: 1s;
+}
+
+svg.animated-logo #graphics #darts > g {
+    transform-box: view-box;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+}
+
+svg.animated-logo #graphics #darts > g#dart-1 {
+    animation-name: dart1;
+    transform-origin: 305px 325px;
+}
+
+svg.animated-logo #graphics #darts > g#dart-3 {
+    animation-name: dart3;
+    transform-origin: 297px 324px;
+}
+
 @keyframes darts {
     from {
-        translate: 0 -40px;
+        translate: 0 -100px;
         opacity: 0;
     }
     to {
