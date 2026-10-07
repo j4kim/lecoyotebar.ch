@@ -30,14 +30,21 @@ class PageForm
                 Repeater::make('blocks')
                     ->schema([
                         TextInput::make('name'),
-                        Select::make('template')->options(BlockTemplate::class)->live(),
+                        Select::make('template')->options(BlockTemplate::class)
+                            ->live()
+                            ->afterStateUpdated(fn(Select $component) => $component
+                                ->getContainer()
+                                ->getComponent('dynamicTypeFields')
+                                ->getChildSchema()
+                                ->fill()),
                         Grid::make()
                             ->schema(function (Get $get): array {
                                 /** @var BlockTemplate $blockTemplate */
                                 $blockTemplate = $get('template');
                                 return $blockTemplate?->getSchema() ?? [];
                             })
-                            ->columnSpanFull(),
+                            ->columnSpanFull()
+                            ->key('dynamicTypeFields'),
                     ])
                     ->columns(2)
                     ->collapsed()
