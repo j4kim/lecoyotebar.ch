@@ -6,8 +6,10 @@ use App\Models\Gallery;
 use Filament\Forms\Components\CodeEditor;
 use Filament\Forms\Components\CodeEditor\Enums\Language;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Select;
+use Filament\Forms\Components\TextInput;
 
 enum BlockTemplate: string
 {
@@ -15,6 +17,7 @@ enum BlockTemplate: string
     case Custom = 'custom';
     case Heading = 'heading';
     case Gallery = 'gallery';
+    case Menu = 'menu';
 
     public function getSchema(): array
     {
@@ -41,6 +44,15 @@ enum BlockTemplate: string
                         Gallery::pluck('name', 'id')->toArray()
                     )
                     ->required(),
+            ],
+            self::Menu => [
+                Repeater::make('items')
+                    ->schema([
+                        TextInput::make('text'),
+                        TextInput::make('to'),
+                    ])
+                    ->columns(2)
+                    ->columnSpanFull(),
             ],
             default => []
         };
