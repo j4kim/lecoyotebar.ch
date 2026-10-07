@@ -33,6 +33,25 @@ svg.animated-logo #graphics > path#bar-right {
     animation-name: rotateCcw;
 }
 
+svg.animated-logo #graphics #darts #dart-1 {
+    rotate: 45deg;
+    transform-box: view-box;
+    transform-origin: 305px 325px;
+}
+
+svg.animated-logo #graphics #darts #dart-3 {
+    rotate: -45deg;
+    transform-box: view-box;
+    transform-origin: 297px 324px;
+}
+
+svg.animated-logo #graphics #darts #dart-1 path {
+    fill: red !important;
+}
+svg.animated-logo #graphics #darts #dart-3 path {
+    fill: yellow !important;
+}
+
 @keyframes appear {
     from {
         opacity: 0;
