@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+require_once __DIR__ . '/content.php';
+
 use App\Models\Enums\BlockTemplate;
 use App\Models\Enums\PageTemplate;
 use App\Models\Page;
@@ -32,6 +34,11 @@ class PageSeeder extends Seeder
                     "template" => BlockTemplate::Custom,
                     "content" => "<x-atoms.menu/>",
                 ],
+                [
+                    "name" => "bienvenue",
+                    "template" => BlockTemplate::RichContent,
+                    "richText" => WELCOME_BLOCK_RICH_CONTENT,
+                ]
             ]
         ]);
     }
