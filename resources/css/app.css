@@ -22,11 +22,11 @@ svg.animated-logo * {
 /* circles */
 
 svg.animated-logo #graphics #circles path {
-    animation: appear 1.5s 2s both;
+    animation: appear 1.5s 3s both;
 }
 
 svg.animated-logo #graphics #circles path#outer-circle {
-    animation-delay: 2.5s;
+    animation-delay: 3.2s;
 }
 
 @keyframes appear {
@@ -77,13 +77,12 @@ svg.animated-logo #graphics > path#bar-right {
 svg.animated-logo #graphics #darts {
     animation-name: darts;
     animation-duration: 0.5s;
-    animation-delay: 0.5s;
 }
 
 svg.animated-logo #graphics #darts > g {
     transform-box: view-box;
     animation-duration: 1.5s;
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 
 svg.animated-logo #graphics #darts > g#dart-1 {
@@ -129,13 +128,14 @@ svg.animated-logo #graphics #darts > g#dart-3 {
 
 svg.animated-logo :is(#le-coyote-bar, #ton-bar-a-flechettes) > path {
     animation-name: showChar;
-    animation-delay: calc(attr(data-delay s) / 30);
+    --delay: 1.2s;
+    animation-delay: calc(var(--delay) + (attr(data-delay s) / 20));
     animation-duration: 0.3s;
     animation-timing-function: cubic-bezier(0.669, 0.276, 0.493, 1.438);
 }
 
 svg.animated-logo #ton-bar-a-flechettes > path {
-    animation-delay: calc(1s + (attr(data-delay s) / 20));
+    --delay: 2s;
 }
 
 @keyframes showChar {
