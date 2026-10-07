@@ -35,7 +35,7 @@ class PageForm
                             ->schema(function (Get $get): array {
                                 /** @var BlockTemplate $blockTemplate */
                                 $blockTemplate = $get('template');
-                                return $blockTemplate->getSchema();
+                                return $blockTemplate?->getSchema() ?? [];
                             })
                             ->columnSpanFull(),
                     ])
