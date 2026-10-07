@@ -6,6 +6,7 @@
         $component = "block-templates.$template";
     @endphp
 
+    <!-- block {{ $template }}:{{ $block['name'] }}  -->
     <x-dynamic-component
         id="block-{{ $block['name'] }}"
         :component="$component"
