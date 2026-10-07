@@ -7,6 +7,7 @@ for (const gallery of photoswipeGalleries) {
     const lightbox = new PhotoSwipeLightbox({
         gallery,
         children: "a",
+        showHideAnimationType: "none",
         pswpModule: () => import("photoswipe"),
     });
     lightbox.init();
