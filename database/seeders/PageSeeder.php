@@ -38,7 +38,21 @@ class PageSeeder extends Seeder
                     "name" => "bienvenue",
                     "template" => BlockTemplate::RichContent,
                     "content" => WELCOME_BLOCK_RICH_CONTENT,
-                ]
+                ],
+                [
+                    "name" => "galerie",
+                    "template" => "gallery",
+                    "images" => [
+                        "01M4BAJ5G809VF6SV8CJ899D0G.webp",
+                        "01M4BAJ5G96AEP0HK8NEBY5TYT.webp",
+                        "01M4BAJ5G96AEP0HK8NEBY5TYV.webp",
+                        "01M4BAJ5GAYHNS82AKXX7RFF9P.webp",
+                        "01M4BAJ5GB99RQ5VP91NPKEBHV.webp",
+                        "01M4BAJ5GB99RQ5VP91NPKEBHW.webp",
+                        "01M4BAJ5GB99RQ5VP91NPKEBHX.webp",
+                        "01M4BAJ5GCPK055Z23D98HFSXN.webp",
+                    ],
+                ],
             ]
         ]);
     }
