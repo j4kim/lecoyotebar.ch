@@ -37,7 +37,7 @@ class PageSeeder extends Seeder
                 [
                     "name" => "bienvenue",
                     "template" => BlockTemplate::RichContent,
-                    "richText" => WELCOME_BLOCK_RICH_CONTENT,
+                    "content" => WELCOME_BLOCK_RICH_CONTENT,
                 ]
             ]
         ]);

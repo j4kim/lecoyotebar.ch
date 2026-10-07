@@ -18,7 +18,7 @@ enum BlockTemplate: string
     {
         return match ($this) {
             self::RichContent => [
-                RichEditor::make('richText')
+                RichEditor::make('content')
                     ->json()
                     ->columnSpanFull(),
             ],
