@@ -123,3 +123,27 @@ svg.animated-logo #graphics #darts > g#dart-3 {
         rotate: 0;
     }
 }
+
+/* text */
+
+svg.animated-logo :is(#le-coyote-bar, #ton-bar-a-flechettes) > path {
+    animation-name: showChar;
+    animation-delay: calc(attr(data-delay s) / 20);
+    animation-duration: 0.4s;
+    animation-timing-function: cubic-bezier(0.669, 0.276, 0.445, 1.525);
+}
+
+svg.animated-logo #ton-bar-a-flechettes > path {
+    animation-delay: calc(1s + (attr(data-delay s) / 20));
+}
+
+@keyframes showChar {
+    from {
+        scale: 0;
+        rotate: -25deg;
+    }
+    to {
+        scale: 1;
+        rotate: 0deg;
+    }
+}
