@@ -4,4 +4,6 @@
     $renderedContent = Blade::render($block['content']);
 @endphp
 
-{!! $renderedContent !!}
+<div id="{{ $block['name'] }}">
+    {!! $renderedContent !!}
+</div>
