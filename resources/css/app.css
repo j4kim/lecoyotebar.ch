@@ -81,8 +81,8 @@ svg.animated-logo #graphics #darts {
 
 svg.animated-logo #graphics #darts > g {
     transform-box: view-box;
-    animation-duration: 1.5s;
-    animation-delay: 0.5s;
+    animation-duration: 1.3s;
+    animation-delay: 0.6s;
 }
 
 svg.animated-logo #graphics #darts > g#dart-1 {
@@ -97,7 +97,7 @@ svg.animated-logo #graphics #darts > g#dart-3 {
 
 @keyframes darts {
     from {
-        translate: 0 -100px;
+        translate: 0 -300px;
         opacity: 0;
     }
     to {
