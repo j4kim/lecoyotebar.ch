@@ -10,7 +10,6 @@ use Filament\Forms\Components\RichEditor;
 
 enum BlockTemplate: string
 {
-    case MarkdownContent = 'markdown-content';
     case RichContent = 'rich-content';
     case Custom = 'custom';
     case Heading = 'heading';
@@ -18,10 +17,6 @@ enum BlockTemplate: string
     public function getSchema(): array
     {
         return match ($this) {
-            self::MarkdownContent => [
-                MarkdownEditor::make('markdown')
-                    ->columnSpanFull()
-            ],
             self::RichContent => [
                 RichEditor::make('richText')
                     ->json()
