@@ -4,7 +4,7 @@
     viewBox="0 0 600 600"
     version="1.1"
     style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
-    {{ $attributes }}
+    {{ $attributes->merge(['class' => 'animated-logo']) }}
 >
     <g id="graphics">
         <g id="circles">

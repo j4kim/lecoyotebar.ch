@@ -10,3 +10,56 @@
 @source '../**/*.js';
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+svg.animated-logo * {
+    transform-origin: center;
+    transform-box: fill-box;
+}
+svg.animated-logo #graphics #circles path {
+    animation: appear 3s ease-in 1s both;
+}
+svg.animated-logo #graphics #circles path#outer-circle {
+    animation-delay: 2s;
+}
+
+svg.animated-logo #graphics > path {
+    animation-name: rotateCw;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+svg.animated-logo #graphics > path#bar-right {
+    animation-name: rotateCcw;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes rotateCw {
+    from {
+        rotate: 0;
+        scale: 0;
+    }
+    to {
+        rotate: 360deg;
+        scale: 1;
+    }
+}
+
+@keyframes rotateCcw {
+    from {
+        rotate: 0;
+        scale: 0;
+    }
+    to {
+        rotate: -360deg;
+        scale: 1;
+    }
+}
