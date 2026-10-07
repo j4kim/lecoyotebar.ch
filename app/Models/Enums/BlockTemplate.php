@@ -2,10 +2,12 @@
 
 namespace App\Models\Enums;
 
+use App\Models\Gallery;
 use Filament\Forms\Components\CodeEditor;
 use Filament\Forms\Components\CodeEditor\Enums\Language;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
+use Filament\Forms\Components\Select;
 
 enum BlockTemplate: string
 {
@@ -34,12 +36,11 @@ enum BlockTemplate: string
                     ->acceptedFileTypes(['video/*']),
             ],
             self::Gallery => [
-                FileUpload::make('images')->multiple()
-                    ->disk('public')
-                    ->reorderable()
-                    ->panelLayout('grid')
-                    ->acceptedFileTypes(['video/*', 'image/*'])
-                    ->columnSpanFull(),
+                Select::make('gallery')
+                    ->options(
+                        Gallery::pluck('name', 'id')->toArray()
+                    )
+                    ->required(),
             ],
             default => []
         };
