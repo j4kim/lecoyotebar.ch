@@ -17,12 +17,13 @@
             />
         </svg>
     </div>
-    <div class="hidden w-full flex-col py-2 text-center group-[.nav-open]:flex">
+    <div
+        class="popper invisible absolute bottom-12 flex w-full flex-col border-t border-white/10 bg-black/50 backdrop-blur-xl group-[.nav-open]:visible">
         @foreach ($items as $item)
             <a
                 href="{{ $item['to'] }}"
                 data-to="{{ $item['to'] }}"
-                class="w-dull p-2 hover:bg-gray-900"
+                class="w-dull border-b border-white/10 p-2 text-center hover:bg-black"
             >
                 {{ $item['text'] }}
             </a>
@@ -32,6 +33,7 @@
 
 <script>
     const nav = document.querySelector(".mobile-nav");
+    const popper = nav.querySelector(".popper");
     const btn = nav.querySelector(".btn");
     btn.addEventListener("click", function() {
         nav.classList.toggle("nav-open")
@@ -42,4 +44,8 @@
             nav.classList.remove("nav-open")
         })
     }
+    window.addEventListener("scroll", function() {
+        const menuDown = (btn.getBoundingClientRect().bottom + 100) > window.innerHeight;
+        popper.classList.toggle("bottom-12", menuDown)
+    })
 </script>
