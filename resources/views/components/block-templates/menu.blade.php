@@ -2,7 +2,7 @@
 
 <div
     id="{{ $block['name'] }}"
-    class="sticky bottom-0 top-0 font-serif"
+    class="sticky bottom-0 top-0 z-10 font-serif"
 >
     <x-atoms.desktop-nav :items="$block['items']" />
     <x-atoms.mobile-nav :items="$block['items']" />
