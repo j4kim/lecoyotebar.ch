@@ -10,7 +10,7 @@
     </nav>
 </header>
 
-<div class="prose dark:prose-invert prose-xl mx-auto flex h-full max-w-5xl flex-col p-2">
+<div class="prose mx-auto flex h-full max-w-5xl flex-col p-2">
     <div class="h-[20svh]"></div>
     {{ $slot }}
 </div>
