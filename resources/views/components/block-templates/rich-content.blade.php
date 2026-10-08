@@ -6,7 +6,7 @@
 
 <div
     id="{{ $block['name'] }}"
-    class="prose mx-auto max-w-3xl px-3 py-12"
+    class="prose mx-auto max-w-3xl px-3 py-3"
 >
     {!! $html !!}
 </div>
