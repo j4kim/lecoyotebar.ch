@@ -1,7 +1,8 @@
 @props(['items'])
 
 <nav class="mobile-nav group text-lg sm:hidden">
-    <div class="btn flex min-h-12 w-full cursor-pointer flex-col items-center justify-center hover:bg-gray-900">
+    <div
+        class="btn flex min-h-12 w-full cursor-pointer flex-col items-center justify-center bg-black/50 backdrop-blur-xl hover:bg-gray-900">
         <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
