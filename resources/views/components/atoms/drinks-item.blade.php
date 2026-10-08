@@ -1,7 +1,7 @@
 @props(['item'])
 
-<div class="flex h-10 items-baseline gap-1">
-    <div class="grow">
+<div class="mb-2 flex min-h-10 flex-col flex-wrap items-baseline leading-tight sm:mb-0 sm:flex-row sm:leading-normal">
+    <div class="sm:grow">
         {{ $item->name }}
         @if ($item->details)
             <span class="font-serif text-sm italic opacity-50">{{ $item->details }}</span>

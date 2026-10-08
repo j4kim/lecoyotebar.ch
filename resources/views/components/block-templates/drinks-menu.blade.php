@@ -14,7 +14,7 @@
         </div>
     @endif
 </div>
-<div class="mx-auto max-w-3xl overflow-x-auto">
+<div class="max-w-dvw mx-auto overflow-x-auto md:max-w-3xl">
     <div class="tabs tabs-lift min-w-max">
         @foreach ($drinksMenu->drinksMenuGroups as $group)
             <input
@@ -24,7 +24,7 @@
                 aria-label="{{ $group['title'] }}"
                 @if ($loop->first) checked @endif
             />
-            <div class="tab-content prose border-base-300 bg-base-100 sticky start-0 max-w-3xl p-6 pt-0">
+            <div class="tab-content prose border-base-300 bg-base-100 max-w-dvw sticky start-0 p-6 pt-0 md:max-w-3xl">
                 @foreach ($group->drinksMenuItems->groupBy('category') as $category => $items)
                     <h4>{{ $category ?: $group->title }}</h4>
                     @foreach ($items as $item)
