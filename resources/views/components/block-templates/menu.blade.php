@@ -1,19 +1,12 @@
 @props(['block'])
 
-<nav
+<div
     id="{{ $block['name'] }}"
-    class="sticky top-0 flex h-12 items-center justify-center gap-8 bg-black font-serif text-lg"
+    class="sticky top-0 bg-black font-serif"
 >
-    @foreach ($block['items'] as $item)
-        <a
-            href="{{ $item['to'] }}"
-            data-to="{{ $item['to'] }}"
-            class="hover:underline"
-        >
-            {{ $item['text'] }}
-        </a>
-    @endforeach
-</nav>
+    <x-atoms.desktop-nav :items="$block['items']" />
+    <x-atoms.mobile-nav :items="$block['items']" />
+</div>
 
 <script>
     const menu = document.getElementById("{{ $block['name'] }}");
