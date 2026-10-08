@@ -65,11 +65,6 @@ enum BlockTemplate: string
                     ->required(),
             ],
             self::DrinksMenu => [
-                Select::make('drinksMenu')
-                    ->options(
-                        DrinksMenu::pluck('name', 'id')->toArray()
-                    )
-                    ->required(),
                 TextInput::make('title'),
             ],
             default => []

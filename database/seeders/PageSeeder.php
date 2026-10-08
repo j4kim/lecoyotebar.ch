@@ -57,7 +57,6 @@ class PageSeeder extends Seeder
                 [
                     "template" => BlockTemplate::DrinksMenu,
                     "name" => "carte",
-                    "drinksMenu" => 1,
                     "title" => "Carte des boissons",
                 ],
                 [

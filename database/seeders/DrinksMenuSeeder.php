@@ -17,16 +17,8 @@ class DrinksMenuSeeder extends Seeder
     {
         $carte = json_decode(file_get_contents(__DIR__ . '/carte.json'), true);
 
-        $drinksMenu = DrinksMenu::create([
-            'name' => 'carte',
-            'meta' => [
-                'notes' => $carte['_notes'],
-            ],
-        ]);
-
         foreach ($carte['groups'] as $group) {
             $dmGroup = DrinksMenuGroup::create([
-                'drinks_menu_id' => $drinksMenu->id,
                 'title' => $group['title'],
                 'columns' => $group['columns'],
                 'show_abv' => $group['show_abv'],

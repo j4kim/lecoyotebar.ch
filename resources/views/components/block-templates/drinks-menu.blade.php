@@ -1,7 +1,7 @@
 @props(['block'])
 
 @php
-    $drinksMenu = \App\Models\DrinksMenu::with('drinksMenuGroups.drinksMenuItems')->find($block['drinksMenu']);
+    $drinksMenuGroups = \App\Models\DrinksMenuGroup::with('drinksMenuItems')->get();
 @endphp
 
 <div
@@ -16,7 +16,7 @@
 </div>
 <div class="max-w-dvw mx-auto overflow-x-auto md:max-w-3xl">
     <div class="tabs tabs-lift min-w-max">
-        @foreach ($drinksMenu->drinksMenuGroups as $group)
+        @foreach ($drinksMenuGroups as $group)
             <input
                 type="radio"
                 name="{{ $block['name'] }}-tabs"

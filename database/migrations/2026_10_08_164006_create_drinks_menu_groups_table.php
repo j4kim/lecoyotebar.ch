@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('drinks_menu_groups', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->foreignId('drinks_menu_id')->constrained();
             $table->string('title')->nullable();
             $table->json('columns')->nullable();
             $table->boolean('show_abv')->nullable();

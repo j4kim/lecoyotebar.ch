@@ -14,11 +14,6 @@ class DrinksMenuGroup extends Model
         'items' => 'array',
     ];
 
-    public function drinksMenu(): BelongsTo
-    {
-        return $this->belongsTo(DrinksMenu::class);
-    }
-
     public function drinksMenuItems(): HasMany
     {
         return $this->hasMany(DrinksMenuItem::class)->chaperone();
