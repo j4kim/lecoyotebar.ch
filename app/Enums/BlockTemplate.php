@@ -18,6 +18,7 @@ enum BlockTemplate: string
     case Heading = 'heading';
     case Gallery = 'gallery';
     case Menu = 'menu';
+    case Spacer = 'spacer';
 
     public function getSchema(): array
     {
@@ -53,6 +54,13 @@ enum BlockTemplate: string
                     ])
                     ->columns(2)
                     ->columnSpanFull(),
+            ],
+            self::Spacer => [
+                Select::make('size')
+                    ->options(
+                        collect(['sm', 'md', 'lg', 'xl'])->mapWithKeys(fn($s) => [$s => $s])
+                    )
+                    ->required(),
             ],
             default => []
         };

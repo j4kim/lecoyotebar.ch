@@ -41,8 +41,13 @@ class PageSeeder extends Seeder
                 ],
                 [
                     "name" => "galerie",
-                    "template" => "gallery",
+                    "template" => BlockTemplate::Gallery,
                     "gallery" => 1,
+                ],
+                [
+                    "name" => "spacer",
+                    "template" => BlockTemplate::Spacer,
+                    "size" => "xl",
                 ],
             ]
         ]);
