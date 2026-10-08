@@ -25,33 +25,38 @@ class PageSeeder extends Seeder
             'template' => PageTemplate::Blocks,
             'blocks' => [
                 [
-                    "name" => "heading",
                     "template" => BlockTemplate::Heading,
+                    "name" => "heading",
                     "video" => "01M49ND89YSKCZG78TPBCKQ6TV.mp4",
                 ],
                 [
-                    "name" => "menu",
                     "template" => BlockTemplate::Menu,
+                    "name" => "menu",
                     "items" => MENU_ITEMS,
                 ],
                 [
-                    "name" => "bienvenue",
                     "template" => BlockTemplate::RichContent,
+                    "name" => "bienvenue",
                     "content" => WELCOME_BLOCK_RICH_CONTENT,
                 ],
                 [
-                    "name" => "galerie",
                     "template" => BlockTemplate::Gallery,
+                    "name" => "galerie",
                     "gallery" => 1,
                 ],
                 [
                     "name" => "horaires",
-                    "template" => "rich-content",
+                    "template" => BlockTemplate::RichContent,
                     "content" => HORAIRES_RICH_CONTENT,
                 ],
                 [
-                    "name" => "spacer",
+                    "template" => BlockTemplate::RichContent,
+                    "name" => "fléchettes",
+                    "content" => DARTS_CONTENT,
+                ],
+                [
                     "template" => BlockTemplate::Spacer,
+                    "name" => "spacer",
                     "size" => "lg",
                 ],
             ]

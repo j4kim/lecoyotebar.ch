@@ -19,6 +19,10 @@ const MENU_ITEMS = [
         "text" => "Horaires",
         "to" => "#horaires",
     ],
+    [
+        "text" => "Fléchettes",
+        "to" => "#fléchettes",
+    ],
 ];
 
 const WELCOME_BLOCK_RICH_CONTENT = [
@@ -563,6 +567,79 @@ const HORAIRES_RICH_CONTENT = [
                             ],
                         ],
                     ],
+                ],
+            ],
+        ],
+    ],
+];
+
+const DARTS_CONTENT = [
+    "type" => "doc",
+    "content" => [
+        [
+            "type" => "heading",
+            "attrs" => [
+                "textAlign" => "start",
+                "level" => 2,
+            ],
+            "content" => [
+                [
+                    "type" => "text",
+                    "text" => "Fléchettes",
+                ],
+            ],
+        ],
+        [
+            "type" => "paragraph",
+            "attrs" => [
+                "textAlign" => "start",
+            ],
+            "content" => [
+                [
+                    "type" => "text",
+                    "text" => "Le bar propose la location de 4 pistes de fléchettes pointe acier. Avec cibles Winmau et système d'autoscoring Scolia. Les fléchettes peuvent être empruntées sur place.",
+                ],
+            ],
+        ],
+        [
+            "type" => "paragraph",
+            "attrs" => [
+                "textAlign" => "start",
+            ],
+            "content" => [
+                [
+                    "type" => "text",
+                    "marks" => [
+                        [
+                            "type" => "bold",
+                        ],
+                    ],
+                    "text" => "Tarif:",
+                ],
+                [
+                    "type" => "text",
+                    "text" => " 16 CHF/h par cible, peu importe le nombre de joueurs.",
+                ],
+            ],
+        ],
+        [
+            "type" => "paragraph",
+            "attrs" => [
+                "textAlign" => "start",
+            ],
+            "content" => [
+                [
+                    "type" => "text",
+                    "marks" => [
+                        [
+                            "type" => "bold",
+                        ],
+                    ],
+                    "text" => "Modes de jeu:",
+                ],
+                [
+                    "type" => "text",
+                    "text" => " X01, Cricket et variantes, Shanghai et plein d'autres.",
                 ],
             ],
         ],
