@@ -26,6 +26,12 @@
             />
             <div class="tab-content border-base-300 bg-base-100 sticky start-0 max-w-3xl p-6">
                 @dump($group->toArray())
+                @foreach ($group->drinksMenuItems as $item)
+                    <div class="flex h-8">
+                        <div class="grow">{{ $item->name }}</div>
+                        <x-atoms.prices :prices="$item->prices" />
+                    </div>
+                @endforeach
             </div>
         @endforeach
     </div>
