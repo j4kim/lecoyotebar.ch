@@ -22,6 +22,10 @@
     @apply dark:prose-invert sm:prose-xl prose-h1:font-serif prose-h2:font-serif prose-h3:font-serif;
 }
 
+.prose table p {
+    margin: 0;
+}
+
 /* LOGO ANIMATION */
 
 svg.animated-logo * {

@@ -45,9 +45,14 @@ class PageSeeder extends Seeder
                     "gallery" => 1,
                 ],
                 [
+                    "name" => "horaires",
+                    "template" => "rich-content",
+                    "content" => HORAIRES_RICH_CONTENT,
+                ],
+                [
                     "name" => "spacer",
                     "template" => BlockTemplate::Spacer,
-                    "size" => "xl",
+                    "size" => "lg",
                 ],
             ]
         ]);

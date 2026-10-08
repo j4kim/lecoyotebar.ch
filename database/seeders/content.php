@@ -183,3 +183,384 @@ const WELCOME_BLOCK_RICH_CONTENT = [
         ],
     ],
 ];
+
+const HORAIRES_RICH_CONTENT = [
+    "type" => "doc",
+    "content" => [
+        [
+            "type" => "heading",
+            "attrs" => [
+                "textAlign" => "start",
+                "level" => 2,
+            ],
+            "content" => [
+                [
+                    "type" => "text",
+                    "text" => "Horaires",
+                ],
+            ],
+        ],
+        [
+            "type" => "table",
+            "content" => [
+                [
+                    "type" => "tableRow",
+                    "content" => [
+                        [
+                            "type" => "tableCell",
+                            "attrs" => [
+                                "colspan" => 1,
+                                "rowspan" => 1,
+                                "colwidth" => null,
+                                "align" => null,
+                            ],
+                            "content" => [
+                                [
+                                    "type" => "paragraph",
+                                    "attrs" => [
+                                        "textAlign" => "start",
+                                    ],
+                                    "content" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "lundi",
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                        [
+                            "type" => "tableCell",
+                            "attrs" => [
+                                "colspan" => 1,
+                                "rowspan" => 1,
+                                "colwidth" => null,
+                                "align" => null,
+                            ],
+                            "content" => [
+                                [
+                                    "type" => "paragraph",
+                                    "attrs" => [
+                                        "textAlign" => "start",
+                                    ],
+                                    "content" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "Fermé",
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+                [
+                    "type" => "tableRow",
+                    "content" => [
+                        [
+                            "type" => "tableCell",
+                            "attrs" => [
+                                "colspan" => 1,
+                                "rowspan" => 1,
+                                "colwidth" => null,
+                                "align" => null,
+                            ],
+                            "content" => [
+                                [
+                                    "type" => "paragraph",
+                                    "attrs" => [
+                                        "textAlign" => "start",
+                                    ],
+                                    "content" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "mardi",
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                        [
+                            "type" => "tableCell",
+                            "attrs" => [
+                                "colspan" => 1,
+                                "rowspan" => 1,
+                                "colwidth" => null,
+                                "align" => null,
+                            ],
+                            "content" => [
+                                [
+                                    "type" => "paragraph",
+                                    "attrs" => [
+                                        "textAlign" => "start",
+                                    ],
+                                    "content" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "Fermé",
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+                [
+                    "type" => "tableRow",
+                    "content" => [
+                        [
+                            "type" => "tableCell",
+                            "attrs" => [
+                                "colspan" => 1,
+                                "rowspan" => 1,
+                                "colwidth" => null,
+                                "align" => null,
+                            ],
+                            "content" => [
+                                [
+                                    "type" => "paragraph",
+                                    "attrs" => [
+                                        "textAlign" => "start",
+                                    ],
+                                    "content" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "mercredi",
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                        [
+                            "type" => "tableCell",
+                            "attrs" => [
+                                "colspan" => 1,
+                                "rowspan" => 1,
+                                "colwidth" => null,
+                                "align" => null,
+                            ],
+                            "content" => [
+                                [
+                                    "type" => "paragraph",
+                                    "attrs" => [
+                                        "textAlign" => "start",
+                                    ],
+                                    "content" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "17:00-00:00",
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+                [
+                    "type" => "tableRow",
+                    "content" => [
+                        [
+                            "type" => "tableCell",
+                            "attrs" => [
+                                "colspan" => 1,
+                                "rowspan" => 1,
+                                "colwidth" => null,
+                                "align" => null,
+                            ],
+                            "content" => [
+                                [
+                                    "type" => "paragraph",
+                                    "attrs" => [
+                                        "textAlign" => "start",
+                                    ],
+                                    "content" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "jeudi",
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                        [
+                            "type" => "tableCell",
+                            "attrs" => [
+                                "colspan" => 1,
+                                "rowspan" => 1,
+                                "colwidth" => null,
+                                "align" => null,
+                            ],
+                            "content" => [
+                                [
+                                    "type" => "paragraph",
+                                    "attrs" => [
+                                        "textAlign" => "start",
+                                    ],
+                                    "content" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "17:00-01:00",
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+                [
+                    "type" => "tableRow",
+                    "content" => [
+                        [
+                            "type" => "tableCell",
+                            "attrs" => [
+                                "colspan" => 1,
+                                "rowspan" => 1,
+                                "colwidth" => null,
+                                "align" => null,
+                            ],
+                            "content" => [
+                                [
+                                    "type" => "paragraph",
+                                    "attrs" => [
+                                        "textAlign" => "start",
+                                    ],
+                                    "content" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "vendredi",
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                        [
+                            "type" => "tableCell",
+                            "attrs" => [
+                                "colspan" => 1,
+                                "rowspan" => 1,
+                                "colwidth" => null,
+                                "align" => null,
+                            ],
+                            "content" => [
+                                [
+                                    "type" => "paragraph",
+                                    "attrs" => [
+                                        "textAlign" => "start",
+                                    ],
+                                    "content" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "16:00-02:00",
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+                [
+                    "type" => "tableRow",
+                    "content" => [
+                        [
+                            "type" => "tableCell",
+                            "attrs" => [
+                                "colspan" => 1,
+                                "rowspan" => 1,
+                                "colwidth" => null,
+                                "align" => null,
+                            ],
+                            "content" => [
+                                [
+                                    "type" => "paragraph",
+                                    "attrs" => [
+                                        "textAlign" => "start",
+                                    ],
+                                    "content" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "samedi",
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                        [
+                            "type" => "tableCell",
+                            "attrs" => [
+                                "colspan" => 1,
+                                "rowspan" => 1,
+                                "colwidth" => null,
+                                "align" => null,
+                            ],
+                            "content" => [
+                                [
+                                    "type" => "paragraph",
+                                    "attrs" => [
+                                        "textAlign" => "start",
+                                    ],
+                                    "content" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "17:00-02:00",
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+                [
+                    "type" => "tableRow",
+                    "content" => [
+                        [
+                            "type" => "tableCell",
+                            "attrs" => [
+                                "colspan" => 1,
+                                "rowspan" => 1,
+                                "colwidth" => null,
+                                "align" => null,
+                            ],
+                            "content" => [
+                                [
+                                    "type" => "paragraph",
+                                    "attrs" => [
+                                        "textAlign" => "start",
+                                    ],
+                                    "content" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "dimanche",
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                        [
+                            "type" => "tableCell",
+                            "attrs" => [
+                                "colspan" => 1,
+                                "rowspan" => 1,
+                                "colwidth" => null,
+                                "align" => null,
+                            ],
+                            "content" => [
+                                [
+                                    "type" => "paragraph",
+                                    "attrs" => [
+                                        "textAlign" => "start",
+                                    ],
+                                    "content" => [
+                                        [
+                                            "type" => "text",
+                                            "text" => "Fermé",
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
+];
