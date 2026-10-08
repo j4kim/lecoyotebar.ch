@@ -5,9 +5,6 @@
             class="h-20"
         >
     </a>
-    <nav class="flex flex-wrap items-center gap-2">
-        <x-navlink routeName="home">{{ config('app.name') }}</x-navlink>
-    </nav>
 </header>
 
 <div class="prose mx-auto flex h-full max-w-5xl flex-col p-2">
