@@ -31,8 +31,8 @@ class PageSeeder extends Seeder
                 ],
                 [
                     "name" => "menu",
-                    "template" => BlockTemplate::Custom,
-                    "content" => "<x-atoms.menu/>",
+                    "template" => BlockTemplate::Menu,
+                    "items" => MENU_ITEMS,
                 ],
                 [
                     "name" => "bienvenue",

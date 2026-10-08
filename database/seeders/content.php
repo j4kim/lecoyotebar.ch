@@ -2,6 +2,21 @@
 
 namespace Database\Seeders;
 
+const MENU_ITEMS = [
+    [
+        "text" => "Accueil",
+        "to" => "#heading",
+    ],
+    [
+        "text" => "Bienvenue",
+        "to" => "#bienvenue",
+    ],
+    [
+        "text" => "Galerie",
+        "to" => "#galerie",
+    ],
+];
+
 const WELCOME_BLOCK_RICH_CONTENT = [
     "type" => "doc",
     "content" => [
