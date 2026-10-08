@@ -29,7 +29,6 @@ class PageForm
                     ->hidden(fn(Get $get) => $get('template') === PageTemplate::Blocks),
                 Repeater::make('blocks')
                     ->schema([
-                        TextInput::make('name'),
                         Select::make('template')->options(BlockTemplate::class)
                             ->live()
                             ->afterStateUpdated(fn(Select $component) => $component
@@ -37,6 +36,7 @@ class PageForm
                                 ->getComponent('dynamicTypeFields')
                                 ->getChildSchema()
                                 ->fill()),
+                        TextInput::make('name')->hidden(fn(Get $get) => !$get('template')),
                         Grid::make()
                             ->schema(function (Get $get): array {
                                 /** @var BlockTemplate $blockTemplate */
@@ -48,7 +48,7 @@ class PageForm
                     ])
                     ->columns(2)
                     ->collapsed()
-                    ->itemLabel(fn(array $state) => $state['name'])
+                    ->itemLabel(fn(array $state) => @$state['name'])
                     ->reorderable()
                     ->columnSpanFull()
                     ->visible(fn(Get $get) => $get('template') === PageTemplate::Blocks)
