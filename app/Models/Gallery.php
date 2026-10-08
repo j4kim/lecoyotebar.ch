@@ -16,7 +16,7 @@ class Gallery extends Model implements HasMedia
     {
         $this
             ->addMediaConversion('preview')
-            ->fit(Fit::Max, 300, 300)
+            ->fit(Fit::Max, 400, 400)
             ->nonQueued();
     }
 }
