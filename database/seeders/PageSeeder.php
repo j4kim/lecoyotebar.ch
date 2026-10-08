@@ -55,16 +55,16 @@ class PageSeeder extends Seeder
                     "content" => DARTS_CONTENT,
                 ],
                 [
-                    "template" => BlockTemplate::Spacer,
-                    "name" => "spacer",
-                    "size" => "lg",
-                ],
-                [
                     "template" => BlockTemplate::DrinksMenu,
                     "name" => "carte",
                     "drinksMenu" => 1,
                     "title" => "Carte des boissons",
-                ]
+                ],
+                [
+                    "template" => BlockTemplate::Spacer,
+                    "name" => "spacer",
+                    "size" => "lg",
+                ],
             ]
         ]);
     }
