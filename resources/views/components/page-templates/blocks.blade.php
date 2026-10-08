@@ -8,7 +8,6 @@
 
     <!-- block {{ $template }}:{{ $block['name'] }}  -->
     <x-dynamic-component
-        id="block-{{ $block['name'] }}"
         :component="$component"
         :block="$block"
     />

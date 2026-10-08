@@ -26,6 +26,10 @@
     margin: 0;
 }
 
+#horaires table td:first-child {
+    @apply font-bold;
+}
+
 /* LOGO ANIMATION */
 
 svg.animated-logo * {
