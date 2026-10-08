@@ -2,8 +2,8 @@
 
 namespace App\Filament\Resources\Pages\Schemas;
 
-use App\Models\Enums\BlockTemplate;
-use App\Models\Enums\PageTemplate;
+use App\Enums\BlockTemplate;
+use App\Enums\PageTemplate;
 use Filament\Forms\Components\MarkdownEditor;
 use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Select;

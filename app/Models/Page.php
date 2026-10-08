@@ -2,12 +2,13 @@
 
 namespace App\Models;
 
+use App\Enums\PageTemplate;
 use Illuminate\Database\Eloquent\Model;
 
 class Page extends Model
 {
     protected $casts = [
-        'template' => Enums\PageTemplate::class,
+        'template' => PageTemplate::class,
         'blocks' => 'array',
     ];
 }
