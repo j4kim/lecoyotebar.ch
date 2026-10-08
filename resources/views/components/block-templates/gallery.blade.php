@@ -16,7 +16,7 @@
             target="_blank"
         >
             <img
-                class="aspect-square h-full w-full"
+                class="aspect-square h-full w-full object-cover"
                 src="{{ $image->preview_url }}"
                 alt="{{ $image->name }}"
             />
