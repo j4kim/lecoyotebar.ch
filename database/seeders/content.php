@@ -15,6 +15,10 @@ const MENU_ITEMS = [
         "text" => "Galerie",
         "to" => "#galerie",
     ],
+    [
+        "text" => "Horaires",
+        "to" => "#horaires",
+    ],
 ];
 
 const WELCOME_BLOCK_RICH_CONTENT = [
