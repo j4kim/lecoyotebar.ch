@@ -18,7 +18,7 @@
         </svg>
     </div>
     <div
-        class="popper invisible absolute bottom-12 flex w-full flex-col border-t border-white/10 bg-black/50 backdrop-blur-xl group-[.nav-open]:visible">
+        class="popper invisible absolute bottom-12 flex max-h-[calc(100svh-var(--spacing)*12)] w-full flex-col overflow-auto border-t border-white/10 bg-black/50 backdrop-blur-xl group-[.nav-open]:visible">
         @foreach ($items as $item)
             <a
                 href="{{ $item['to'] }}"
