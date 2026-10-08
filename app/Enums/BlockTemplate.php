@@ -2,6 +2,7 @@
 
 namespace App\Enums;
 
+use App\Models\DrinksMenu;
 use App\Models\Gallery;
 use Filament\Forms\Components\CodeEditor;
 use Filament\Forms\Components\CodeEditor\Enums\Language;
@@ -19,6 +20,7 @@ enum BlockTemplate: string
     case Gallery = 'gallery';
     case Menu = 'menu';
     case Spacer = 'spacer';
+    case DrinksMenu = 'drinks-menu';
 
     public function getSchema(): array
     {
@@ -61,6 +63,14 @@ enum BlockTemplate: string
                         collect(['sm', 'md', 'lg', 'xl'])->mapWithKeys(fn($s) => [$s => $s])
                     )
                     ->required(),
+            ],
+            self::DrinksMenu => [
+                Select::make('drinksMenu')
+                    ->options(
+                        DrinksMenu::pluck('name', 'id')->toArray()
+                    )
+                    ->required(),
+                TextInput::make('title'),
             ],
             default => []
         };

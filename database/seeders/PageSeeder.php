@@ -59,6 +59,12 @@ class PageSeeder extends Seeder
                     "name" => "spacer",
                     "size" => "lg",
                 ],
+                [
+                    "template" => BlockTemplate::DrinksMenu,
+                    "name" => "carte",
+                    "drinksMenu" => 1,
+                    "title" => "Carte des boissons",
+                ]
             ]
         ]);
     }

@@ -23,8 +23,8 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             GallerySeeder::class,
-            PageSeeder::class,
             DrinksMenuSeeder::class,
+            PageSeeder::class,
         ]);
     }
 }
