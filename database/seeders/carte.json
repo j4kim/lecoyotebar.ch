@@ -446,7 +446,7 @@
                     "label": "2cl"
                 },
                 {
-                    "key": "27_5cl",
+                    "key": "27.5cl",
                     "label": "27,5cl"
                 }
             ],
@@ -511,7 +511,7 @@
                     "name": "Smirnoff Ice",
                     "abv": 4,
                     "prices": {
-                        "27_5cl": null
+                        "27.5cl": null
                     }
                 },
                 {
@@ -549,8 +549,7 @@
                     "name": "Gordon's",
                     "abv": 37.5,
                     "prices": {
-                        "2cl": 3,
-                        "4cl": null
+                        "2cl": 3
                     }
                 },
                 {
@@ -559,8 +558,7 @@
                     "abv": 47.3,
                     "non_alcoholic_available": true,
                     "prices": {
-                        "2cl": 3.5,
-                        "4cl": null
+                        "2cl": 3.5
                     }
                 },
                 {
@@ -568,8 +566,7 @@
                     "name": "Tanqueray Ten",
                     "abv": 47.3,
                     "prices": {
-                        "2cl": 4,
-                        "4cl": null
+                        "2cl": 4
                     }
                 },
                 {
@@ -577,8 +574,7 @@
                     "name": "Tanqueray Rangpur",
                     "abv": 41.3,
                     "prices": {
-                        "2cl": 3.5,
-                        "4cl": null
+                        "2cl": 3.5
                     }
                 },
                 {
@@ -586,8 +582,7 @@
                     "name": "Tanqueray Sevilla",
                     "abv": 41.3,
                     "prices": {
-                        "2cl": 3.5,
-                        "4cl": null
+                        "2cl": 3.5
                     }
                 },
                 {
@@ -595,8 +590,7 @@
                     "name": "Hendrick's",
                     "abv": 41.4,
                     "prices": {
-                        "2cl": 4,
-                        "4cl": null
+                        "2cl": 4
                     }
                 },
                 {
@@ -1116,7 +1110,7 @@
                     "label": "2cl"
                 },
                 {
-                    "key": "meter",
+                    "key": "Mètre",
                     "label": "Mètre"
                 }
             ],
@@ -1127,7 +1121,7 @@
                     "name": "B 52",
                     "prices": {
                         "2cl": 4,
-                        "meter": 40
+                        "Mètre": 40
                     }
                 },
                 {
@@ -1135,14 +1129,14 @@
                     "abv": 18,
                     "prices": {
                         "2cl": 3,
-                        "meter": 30
+                        "Mètre": 30
                     }
                 },
                 {
                     "name": "Blow Job",
                     "prices": {
                         "2cl": 4,
-                        "meter": 40
+                        "Mètre": 40
                     }
                 },
                 {
@@ -1150,7 +1144,7 @@
                     "abv": 20,
                     "prices": {
                         "2cl": 3,
-                        "meter": 30
+                        "Mètre": 30
                     }
                 },
                 {
@@ -1158,7 +1152,7 @@
                     "abv": 21,
                     "prices": {
                         "2cl": 3,
-                        "meter": 30
+                        "Mètre": 30
                     }
                 },
                 {
@@ -1166,7 +1160,7 @@
                     "abv": 50,
                     "prices": {
                         "2cl": 4,
-                        "meter": 40
+                        "Mètre": 40
                     }
                 },
                 {
@@ -1174,22 +1168,21 @@
                     "abv": 35,
                     "prices": {
                         "2cl": 3,
-                        "meter": 30
+                        "Mètre": 30
                     }
                 },
                 {
                     "name": "Kamikaze",
                     "note": "-> Shaker",
                     "prices": {
-                        "2cl": null,
-                        "meter": 30
+                        "Mètre": 30
                     }
                 },
                 {
                     "name": "Kisscool",
                     "prices": {
                         "2cl": 4,
-                        "meter": 40
+                        "Mètre": 40
                     }
                 },
                 {
@@ -1197,7 +1190,7 @@
                     "abv": 40,
                     "prices": {
                         "2cl": 3,
-                        "meter": 30
+                        "Mètre": 30
                     }
                 },
                 {
@@ -1205,7 +1198,7 @@
                     "abv": 38,
                     "prices": {
                         "2cl": 3,
-                        "meter": 30
+                        "Mètre": 30
                     }
                 },
                 {
@@ -1213,21 +1206,21 @@
                     "abv": 15,
                     "prices": {
                         "2cl": 3.5,
-                        "meter": 35
+                        "Mètre": 35
                     }
                 },
                 {
                     "name": "Ti-Punch",
                     "prices": {
                         "2cl": 4,
-                        "meter": 40
+                        "Mètre": 40
                     }
                 },
                 {
                     "name": "Vodka Caramel",
                     "prices": {
                         "2cl": 3,
-                        "meter": 30
+                        "Mètre": 30
                     }
                 },
                 {
@@ -1235,7 +1228,7 @@
                     "abv": 15,
                     "prices": {
                         "2cl": 3,
-                        "meter": 30
+                        "Mètre": 30
                     }
                 },
                 {
@@ -1243,7 +1236,7 @@
                     "abv": 17,
                     "prices": {
                         "2cl": 3,
-                        "meter": 30
+                        "Mètre": 30
                     }
                 },
                 {
@@ -1251,7 +1244,7 @@
                     "abv": 40,
                     "prices": {
                         "2cl": 3.5,
-                        "meter": 35
+                        "Mètre": 35
                     }
                 },
                 {
@@ -1259,7 +1252,7 @@
                     "abv": 17,
                     "prices": {
                         "2cl": 3,
-                        "meter": 30
+                        "Mètre": 30
                     }
                 },
                 {
@@ -1267,7 +1260,7 @@
                     "abv": 20,
                     "prices": {
                         "2cl": 3,
-                        "meter": 30
+                        "Mètre": 30
                     }
                 }
             ]

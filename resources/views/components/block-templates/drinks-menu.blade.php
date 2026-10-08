@@ -24,13 +24,12 @@
                 aria-label="{{ $group['title'] }}"
                 @if ($loop->first) checked @endif
             />
-            <div class="tab-content border-base-300 bg-base-100 sticky start-0 max-w-3xl p-6">
-                @dump($group->toArray())
-                @foreach ($group->drinksMenuItems as $item)
-                    <div class="flex h-8">
-                        <div class="grow">{{ $item->name }}</div>
-                        <x-atoms.prices :prices="$item->prices" />
-                    </div>
+            <div class="tab-content prose border-base-300 bg-base-100 sticky start-0 max-w-3xl p-6 pt-0">
+                @foreach ($group->drinksMenuItems->groupBy('category') as $category => $items)
+                    <h4>{{ $category ?: $group->title }}</h4>
+                    @foreach ($items as $item)
+                        <x-atoms.drinks-item :item="$item" />
+                    @endforeach
                 @endforeach
             </div>
         @endforeach

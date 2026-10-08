@@ -23,7 +23,7 @@
 }
 
 @utility prose {
-    @apply dark:prose-invert sm:prose-xl prose-h1:font-serif prose-h2:font-serif prose-h3:font-serif;
+    @apply dark:prose-invert sm:prose-xl prose-h1:font-serif prose-h2:font-serif prose-h3:font-serif prose-h4:font-serif;
 }
 
 .prose table p {
