@@ -319,7 +319,7 @@
             "title": "Bières",
             "columns": [
                 {
-                    "key": "2_5dl",
+                    "key": "2.5dl",
                     "label": "2,5dl"
                 },
                 {
@@ -338,7 +338,7 @@
                     "category": "Bières pression",
                     "name": "1664",
                     "prices": {
-                        "2_5dl": 3.5,
+                        "2.5dl": 3.5,
                         "5dl": 6
                     }
                 },
@@ -346,7 +346,7 @@
                     "category": "Bières pression",
                     "name": "1664 Blanc",
                     "prices": {
-                        "2_5dl": 4,
+                        "2.5dl": 4,
                         "5dl": 7
                     }
                 },
@@ -354,7 +354,7 @@
                     "category": "Bières pression",
                     "name": "Schneider Weisse Helle",
                     "prices": {
-                        "2_5dl": 4.5,
+                        "2.5dl": 4.5,
                         "5dl": 7.5
                     }
                 },
@@ -362,7 +362,7 @@
                     "category": "Bières pression",
                     "name": "Guinness IPA",
                     "prices": {
-                        "2_5dl": 4.5,
+                        "2.5dl": 4.5,
                         "5dl": 8
                     }
                 },
@@ -370,7 +370,7 @@
                     "category": "Bières pression",
                     "name": "Guinness",
                     "prices": {
-                        "2_5dl": 4.5,
+                        "2.5dl": 4.5,
                         "5dl": 8
                     }
                 },
@@ -378,7 +378,7 @@
                     "category": "Bières pression",
                     "name": "Supplément Picon",
                     "prices": {
-                        "2_5dl": 1.5,
+                        "2.5dl": 1.5,
                         "5dl": 3
                     }
                 },
