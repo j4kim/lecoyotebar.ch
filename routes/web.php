@@ -24,7 +24,8 @@ Route::post('/submit-contact-form/{contactFormName}', function (Request $request
         'email' => 'required|email:rfc,dns',
         'message' => 'required|string|max:2000',
     ]);
-    dd($request->all(), $contactFormName);
+    $sendTo = $request->has('send_to') ? decrypt($request->send_to) : config('mail.from.address');
+    dd($request->all(), $contactFormName, $sendTo);
 })
     // ->middleware('throttle:2,1')
     ->name('submit-contact-form');

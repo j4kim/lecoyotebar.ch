@@ -6,6 +6,16 @@
     action="{{ route('submit-contact-form', $block['name']) }}"
 >
     @csrf
+
+    @isset($block['send_to'])
+        <input
+            type="hidden"
+            name="send_to"
+            autocomplete="off"
+            value="{{ encrypt($block['send_to']) }}"
+        >
+    @endisset
+
     <fieldset class="fieldset bg-base-200 border-base-300 rounded-box mx-auto max-w-3xl gap-4 border p-4">
         <legend class="fieldset-legend">{{ @$block['title'] }}</legend>
 
