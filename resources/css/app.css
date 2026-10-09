@@ -4,7 +4,6 @@
 @plugin "daisyui/theme" {
     name: "dark";
     default: true;
-    --color-base-100: oklch(0.18 0 0);
 }
 @plugin "@tailwindcss/typography";
 @plugin "@tailwindcss/forms" {
@@ -19,7 +18,10 @@
     --font-serif:
         "Libre Caslon Text", ui-serif, Georgia, Cambria, "Times New Roman",
         Times, serif;
-    --color-base-100: red;
+}
+
+:root {
+    --color-base-100: oklch(0.18 0 0) !important;
 }
 
 @utility prose {
