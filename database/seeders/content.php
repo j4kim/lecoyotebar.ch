@@ -649,3 +649,67 @@ const DARTS_CONTENT = [
         ],
     ],
 ];
+
+const CONTACT_CONTENT = [
+    "type" => "doc",
+    "content" => [
+        [
+            "type" => "heading",
+            "attrs" => [
+                "textAlign" => "start",
+                "level" => 2,
+            ],
+            "content" => [
+                [
+                    "type" => "text",
+                    "text" => "Contact",
+                ],
+            ],
+        ],
+        [
+            "type" => "paragraph",
+            "attrs" => [
+                "textAlign" => "start",
+            ],
+            "content" => [
+                [
+                    "type" => "text",
+                    "text" => "Le Coyote Bar",
+                ],
+                [
+                    "type" => "hardBreak",
+                ],
+                [
+                    "type" => "text",
+                    "text" => "Rue Jardinière 43",
+                ],
+                [
+                    "type" => "hardBreak",
+                ],
+                [
+                    "type" => "text",
+                    "text" => "2300 La Chaux-de-Fonds",
+                ],
+                [
+                    "type" => "hardBreak",
+                ],
+                [
+                    "type" => "text",
+                    "marks" => [
+                        [
+                            "type" => "link",
+                            "attrs" => [
+                                "href" => "tel:+41329134320",
+                                "target" => null,
+                                "rel" => null,
+                                "class" => null,
+                                "title" => null,
+                            ],
+                        ],
+                    ],
+                    "text" => "032 913 43 20",
+                ],
+            ],
+        ],
+    ],
+];

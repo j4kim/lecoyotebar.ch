@@ -21,6 +21,7 @@ enum BlockTemplate: string
     case Menu = 'menu';
     case Spacer = 'spacer';
     case DrinksMenu = 'drinks-menu';
+    case ContactForm = 'contact-form';
 
     public function getSchema(): array
     {
@@ -67,6 +68,7 @@ enum BlockTemplate: string
             self::DrinksMenu => [
                 TextInput::make('title'),
             ],
+            self::ContactForm => [],
             default => []
         };
     }

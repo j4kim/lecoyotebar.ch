@@ -64,6 +64,15 @@ class PageSeeder extends Seeder
                     "name" => "spacer",
                     "size" => "lg",
                 ],
+                [
+                    "template" => BlockTemplate::RichContent,
+                    "name" => "contact",
+                    "content" => CONTACT_CONTENT,
+                ],
+                [
+                    "template" => BlockTemplate::ContactForm,
+                    "name" => "contactform",
+                ]
             ]
         ]);
     }
