@@ -6,6 +6,7 @@
     action="{{ route('submit-contact-form', $block['name']) }}"
 >
     @csrf
+    @honeypot
 
     @isset($block['send_to'])
         <input

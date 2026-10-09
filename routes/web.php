@@ -5,6 +5,7 @@ use App\Models\Page;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
+use Spatie\Honeypot\ProtectAgainstSpam;
 
 use function Illuminate\Support\defer;
 
@@ -34,4 +35,5 @@ Route::post('/submit-contact-form/{contactFormName}', function (Request $request
     return $mail;
 })
     ->middleware('throttle:2,1')
+    ->middleware(ProtectAgainstSpam::class)
     ->name('submit-contact-form');
