@@ -5,6 +5,7 @@ namespace App\Filament\Resources\DrinksMenuGroups;
 use App\Filament\Resources\DrinksMenuGroups\Pages\CreateDrinksMenuGroup;
 use App\Filament\Resources\DrinksMenuGroups\Pages\EditDrinksMenuGroup;
 use App\Filament\Resources\DrinksMenuGroups\Pages\ListDrinksMenuGroups;
+use App\Filament\Resources\DrinksMenuGroups\RelationManagers\DrinksMenuItemsRelationManager;
 use App\Filament\Resources\DrinksMenuGroups\Schemas\DrinksMenuGroupForm;
 use App\Filament\Resources\DrinksMenuGroups\Tables\DrinksMenuGroupsTable;
 use App\Models\DrinksMenuGroup;
@@ -37,7 +38,7 @@ class DrinksMenuGroupResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            DrinksMenuItemsRelationManager::class
         ];
     }
 
