@@ -24,10 +24,14 @@
                 @endif
                 @if ($value)
                     <span class="inline-block w-12">
-                        @if (is_int($value))
-                            {{ $value }}.-
+                        @if (is_numeric($value))
+                            @if (is_int(+$value))
+                                {{ $value }}.-
+                            @else
+                                {{ number_format(+$value, 2) }}
+                            @endif
                         @else
-                            {{ number_format($value, 2) }}
+                            {{ $value }}
                         @endif
                     </span>
                 @endif
