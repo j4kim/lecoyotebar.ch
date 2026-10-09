@@ -6,7 +6,7 @@
 
 <div
     id="{{ $block['name'] }}"
-    class="bg-base-200 py-px"
+    class="bg-base-200 py-8 sm:py-px"
 >
     <div
         class="mx-auto mb-3 max-w-3xl px-3"
