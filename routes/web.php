@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Page;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -16,3 +17,14 @@ Route::get('/page/{name}', function (string $name) {
 Route::get('/login', function () {
     return redirect()->route('filament.admin.auth.login');
 })->name('login');
+
+Route::post('/submit-contact-form/{contactFormName}', function (Request $request, string $contactFormName) {
+    $request->validate([
+        'fullname' => 'required|string',
+        'email' => 'required|email:rfc,dns',
+        'message' => 'required|string|max:2000',
+    ]);
+    dd($request->all(), $contactFormName);
+})
+    // ->middleware('throttle:2,1')
+    ->name('submit-contact-form');
