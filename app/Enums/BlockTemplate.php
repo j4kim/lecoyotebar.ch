@@ -68,7 +68,9 @@ enum BlockTemplate: string
             self::DrinksMenu => [
                 TextInput::make('title'),
             ],
-            self::ContactForm => [],
+            self::ContactForm => [
+                TextInput::make('send_to')->email(),
+            ],
             default => []
         };
     }
