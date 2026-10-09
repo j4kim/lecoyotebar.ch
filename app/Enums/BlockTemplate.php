@@ -69,6 +69,7 @@ enum BlockTemplate: string
                 TextInput::make('title'),
             ],
             self::ContactForm => [
+                TextInput::make('title'),
                 TextInput::make('send_to')->email(),
             ],
             default => []

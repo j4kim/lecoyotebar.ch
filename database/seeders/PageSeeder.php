@@ -72,6 +72,8 @@ class PageSeeder extends Seeder
                 [
                     "template" => BlockTemplate::ContactForm,
                     "name" => "contactform",
+                    "send_to" => "contact@3sdl.ch",
+                    "title" => "Formulaire de contact",
                 ]
             ]
         ]);
