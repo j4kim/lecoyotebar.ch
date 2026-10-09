@@ -5,6 +5,7 @@ use App\Models\Page;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
+use RyanChandler\LaravelCloudflareTurnstile\Rules\Turnstile;
 use Spatie\Honeypot\ProtectAgainstSpam;
 
 use function Illuminate\Support\defer;
@@ -24,11 +25,15 @@ Route::get('/login', function () {
 })->name('login');
 
 Route::post('/submit-contact-form/{contactFormName}', function (Request $request, string $contactFormName) {
-    $request->validate([
+    $rules = [
         'fullname' => 'required|string',
         'email' => 'required|email:rfc,dns',
         'message' => 'required|string|max:2000',
-    ]);
+    ];
+    if (config('services.turnstile.enable')) {
+        $rules['cf-turnstile-response'] = ['required', new Turnstile];
+    }
+    $request->validate($rules);
     $sendTo = $request->has('send_to') ? decrypt($request->send_to) : config('mail.from.address');
     $mail = new ContactFormSubmission($request->fullname, $request->email, $request->message);
     defer(fn() => Mail::to($sendTo)->send($mail));

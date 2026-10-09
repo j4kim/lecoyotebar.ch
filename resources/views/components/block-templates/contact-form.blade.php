@@ -49,6 +49,12 @@
                 required
             >{{ old('message') }}</textarea>
         </x-atoms.field>
+
+        @if (config('services.turnstile.enable'))
+            <x-turnstile />
+            <x-atoms.validation-error name="cf-turnstile-response" />
+        @endif
+
         <button class="btn btn-primary">Envoyer</button>
     </fieldset>
 </form>
