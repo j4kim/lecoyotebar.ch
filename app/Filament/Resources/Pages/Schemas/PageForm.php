@@ -19,6 +19,7 @@ class PageForm
         return $schema
             ->components([
                 TextInput::make('name')
+                    ->disabledOn('edit')
                     ->required(),
                 TextInput::make('title'),
                 Select::make('template')

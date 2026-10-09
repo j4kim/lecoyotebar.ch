@@ -2,13 +2,10 @@
 
 namespace App\Providers;
 
-use App\Models\Page;
-use App\Policies\AdminPolicy;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
 
@@ -45,7 +42,5 @@ class AppServiceProvider extends ServiceProvider
         JsonResource::withoutWrapping();
 
         Model::unguard();
-
-        Gate::policy(Page::class, AdminPolicy::class);
     }
 }

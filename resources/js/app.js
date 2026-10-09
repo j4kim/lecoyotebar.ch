@@ -12,3 +12,10 @@ for (const gallery of photoswipeGalleries) {
     });
     lightbox.init();
 }
+
+window.addEventListener("load", () => {
+    const errEl = document.querySelector(".validation-error");
+    if (errEl) {
+        errEl.scrollIntoView();
+    }
+});

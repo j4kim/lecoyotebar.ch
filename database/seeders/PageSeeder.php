@@ -60,11 +60,41 @@ class PageSeeder extends Seeder
                     "title" => "Carte des boissons",
                 ],
                 [
+                    "template" => BlockTemplate::RichContent,
+                    "name" => "contact",
+                    "content" => CONTACT_CONTENT,
+                ],
+                [
+                    "template" => BlockTemplate::ContactForm,
+                    "name" => "contactform",
+                    "send_to" => "contact@3sdl.ch",
+                    "title" => "Formulaire de contact",
+                ],
+                [
                     "template" => BlockTemplate::Spacer,
                     "name" => "spacer",
                     "size" => "lg",
                 ],
+                [
+                    "template" => "footer",
+                    "name" => "footer",
+                    "content" => FOOTER_CONTENT,
+                    "credits" => FOOTER_CREDITS,
+                ],
             ]
+        ]);
+
+        Page::create([
+            'name' => 'mail-sent',
+            'title' => "Mail envoyé",
+            'template' => PageTemplate::Simple,
+            'content' => <<<MD
+                # Mail envoyé
+
+                Tout bon, merci pour ton message, on le lira !
+
+                [Super](/)
+                MD
         ]);
     }
 }
