@@ -13,7 +13,7 @@
         x-data="{ activeTab: {{ $drinksMenuGroups->first()->id }} }"
     >
         @if (@$block['title'])
-            <div class="prose mx-auto max-w-3xl px-3">
+            <div class="prose mx-auto max-w-3xl">
                 <h2>{{ $block['title'] }}</h2>
             </div>
         @endif
@@ -34,7 +34,7 @@
             </div>
         </nav>
 
-        <article class="prose mx-auto max-w-3xl px-3">
+        <article class="prose mx-auto max-w-3xl">
             @foreach ($drinksMenuGroups as $group)
                 <div
                     data-group-title="{{ $group->title }}"
