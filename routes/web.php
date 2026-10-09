@@ -1,8 +1,12 @@
 <?php
 
+use App\Mail\ContactFormSubmission;
 use App\Models\Page;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
+
+use function Illuminate\Support\defer;
 
 Route::get('/', function () {
     $homePage = Page::where('name', 'home')->firstOrFail();
@@ -25,7 +29,9 @@ Route::post('/submit-contact-form/{contactFormName}', function (Request $request
         'message' => 'required|string|max:2000',
     ]);
     $sendTo = $request->has('send_to') ? decrypt($request->send_to) : config('mail.from.address');
-    dd($request->all(), $contactFormName, $sendTo);
+    $mail = new ContactFormSubmission($request->fullname, $request->email, $request->message);
+    defer(fn() => Mail::to($sendTo)->send($mail));
+    return $mail;
 })
-    // ->middleware('throttle:2,1')
+    ->middleware('throttle:2,1')
     ->name('submit-contact-form');
