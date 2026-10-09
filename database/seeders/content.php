@@ -23,6 +23,10 @@ const MENU_ITEMS = [
         "text" => "Fléchettes",
         "to" => "#fléchettes",
     ],
+    [
+        "text" => "Carte",
+        "to" => "#carte",
+    ],
 ];
 
 const WELCOME_BLOCK_RICH_CONTENT = [

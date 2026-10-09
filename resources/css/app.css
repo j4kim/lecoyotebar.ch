@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap");
 @import "tailwindcss";
-
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+    name: "dark";
+    default: true;
+    --color-base-100: oklch(0.18 0 0);
+}
 @plugin "@tailwindcss/typography";
-
 @plugin "@tailwindcss/forms" {
     strategy: "class"; /* only generate classes */
 }
-
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
@@ -16,10 +19,11 @@
     --font-serif:
         "Libre Caslon Text", ui-serif, Georgia, Cambria, "Times New Roman",
         Times, serif;
+    --color-base-100: red;
 }
 
 @utility prose {
-    @apply dark:prose-invert sm:prose-xl prose-h1:font-serif prose-h2:font-serif prose-h3:font-serif;
+    @apply dark:prose-invert sm:prose-xl prose-h1:font-serif prose-h2:font-serif prose-h3:font-serif prose-h4:font-serif;
 }
 
 .prose table p {

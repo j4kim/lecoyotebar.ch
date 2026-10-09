@@ -1,0 +1,1329 @@
+{
+    "_notes": {
+        "non_alcoholic": "* boissons et cocktails disponibles sans alcool",
+        "mixer_not_included": "Accompagnement non compris",
+        "platters": "Nos planchettes sont servies avec des toasts, des cornichons et des petits oignons.",
+        "allergens": "Allergènes et intolérances, prière de vous adresser au personnel.",
+        "origins": "Provenances : viande: Bilat (Les Bois) / fromage: Stähli (Travers)"
+    },
+    "groups": [
+        {
+            "id": "hot_drinks",
+            "title": "Boissons chaudes",
+            "columns": [
+                {
+                    "key": "single",
+                    "label": ""
+                }
+            ],
+            "show_abv": false,
+            "notes": [],
+            "items": [
+                {
+                    "name": "Café / Expresso / Thé",
+                    "prices": {
+                        "single": 3
+                    }
+                },
+                {
+                    "name": "Thé Rhum",
+                    "prices": {
+                        "single": 6
+                    }
+                },
+                {
+                    "name": "Vin Chaud",
+                    "prices": {
+                        "single": 5
+                    }
+                },
+                {
+                    "name": "Irish Coffee",
+                    "prices": {
+                        "single": 10
+                    }
+                },
+                {
+                    "name": "Hot Mojito",
+                    "prices": {
+                        "single": 10
+                    }
+                }
+            ]
+        },
+        {
+            "id": "soft_drinks",
+            "title": "Minérales",
+            "columns": [
+                {
+                    "key": "3dl",
+                    "label": "3dl"
+                },
+                {
+                    "key": "5dl",
+                    "label": "5dl"
+                },
+                {
+                    "key": "33cl",
+                    "label": "33cl"
+                },
+                {
+                    "key": "25cl",
+                    "label": "25cl"
+                }
+            ],
+            "show_abv": false,
+            "notes": [],
+            "items": [
+                {
+                    "category": "Minérales ouvertes",
+                    "name": "Coca-Cola",
+                    "prices": {
+                        "3dl": 3.5,
+                        "5dl": 6
+                    }
+                },
+                {
+                    "category": "Minérales ouvertes",
+                    "name": "Ginger Beer",
+                    "details": "Thomas Henry",
+                    "prices": {
+                        "3dl": 3.5,
+                        "5dl": 6
+                    }
+                },
+                {
+                    "category": "Minérales ouvertes",
+                    "name": "Jus de pomme",
+                    "details": "Ramseier",
+                    "prices": {
+                        "3dl": 3.5,
+                        "5dl": 6
+                    }
+                },
+                {
+                    "category": "Minérales ouvertes",
+                    "name": "Schweppes",
+                    "details": "tonic / lemon",
+                    "prices": {
+                        "3dl": 3.5,
+                        "5dl": 6
+                    }
+                },
+                {
+                    "category": "Minérales ouvertes",
+                    "name": "Fusetea",
+                    "details": "lemon / peach hibiscus",
+                    "prices": {
+                        "3dl": 3.5,
+                        "5dl": 6
+                    }
+                },
+                {
+                    "category": "Minérales ouvertes",
+                    "name": "Sprite",
+                    "prices": {
+                        "3dl": 3.5,
+                        "5dl": 6
+                    }
+                },
+                {
+                    "category": "Minérales ouvertes",
+                    "name": "Valser",
+                    "details": "plate / gazeuse",
+                    "prices": {
+                        "3dl": 3.5,
+                        "5dl": 6
+                    }
+                },
+                {
+                    "category": "Minérales ouvertes",
+                    "name": "Sirops",
+                    "prices": {
+                        "3dl": 2,
+                        "5dl": 3.5
+                    }
+                },
+                {
+                    "category": "Minérales bouteilles",
+                    "name": "Club Maté",
+                    "prices": {
+                        "33cl": 6
+                    }
+                },
+                {
+                    "category": "Minérales bouteilles",
+                    "name": "Coca-Cola Zéro",
+                    "prices": {
+                        "33cl": 4
+                    }
+                },
+                {
+                    "category": "Minérales bouteilles",
+                    "name": "Perrier",
+                    "prices": {
+                        "33cl": 4
+                    }
+                },
+                {
+                    "category": "Minérales bouteilles",
+                    "name": "Rivella",
+                    "prices": {
+                        "33cl": 4
+                    }
+                },
+                {
+                    "category": "Minérales bouteilles",
+                    "name": "Red Bull",
+                    "prices": {
+                        "25cl": 5
+                    }
+                }
+            ]
+        },
+        {
+            "id": "juices",
+            "title": "Jus de fruit",
+            "columns": [
+                {
+                    "key": "3dl",
+                    "label": "3dl"
+                },
+                {
+                    "key": "5dl",
+                    "label": "5dl"
+                }
+            ],
+            "show_abv": false,
+            "notes": [],
+            "items": [
+                {
+                    "category": "Jus de fruit",
+                    "name": "Orange",
+                    "details": "Granini",
+                    "prices": {
+                        "3dl": 3.5,
+                        "5dl": 6
+                    }
+                },
+                {
+                    "category": "Jus de fruit",
+                    "name": "Tomate",
+                    "details": "Granini",
+                    "prices": {
+                        "3dl": 3.5,
+                        "5dl": 6
+                    }
+                },
+                {
+                    "category": "Nectar de fruit",
+                    "name": "Ananas",
+                    "details": "Granini",
+                    "prices": {
+                        "3dl": 3.5,
+                        "5dl": 6
+                    }
+                },
+                {
+                    "category": "Nectar de fruit",
+                    "name": "Cranberry",
+                    "prices": {
+                        "3dl": 3.5,
+                        "5dl": 6
+                    }
+                }
+            ]
+        },
+        {
+            "id": "wines",
+            "title": "Vins",
+            "columns": [
+                {
+                    "key": "1dl",
+                    "label": "1dl"
+                },
+                {
+                    "key": "5dl",
+                    "label": "5dl"
+                }
+            ],
+            "show_abv": false,
+            "notes": [],
+            "items": [
+                {
+                    "name": "Blanc Cassis",
+                    "prices": {
+                        "1dl": 4
+                    }
+                },
+                {
+                    "name": "Clairette de Die",
+                    "prices": {
+                        "1dl": 4
+                    }
+                },
+                {
+                    "name": "Mauler",
+                    "prices": {
+                        "1dl": 4
+                    }
+                },
+                {
+                    "name": "Chardonnay",
+                    "prices": {
+                        "1dl": 4.5
+                    }
+                },
+                {
+                    "name": "Muscat Corse",
+                    "prices": {
+                        "1dl": 4.5
+                    }
+                },
+                {
+                    "name": "Neuchâtel",
+                    "prices": {
+                        "1dl": 3.5
+                    }
+                },
+                {
+                    "name": "Prosecco",
+                    "prices": {
+                        "1dl": 3.5
+                    }
+                },
+                {
+                    "name": "Œil-de-Perdrix",
+                    "prices": {
+                        "1dl": 4.5,
+                        "5dl": 21
+                    }
+                },
+                {
+                    "name": "Rosé de Gamay",
+                    "prices": {
+                        "1dl": 3.5,
+                        "5dl": 16
+                    }
+                },
+                {
+                    "name": "Rioja Baron del Ley",
+                    "prices": {
+                        "1dl": 4.5
+                    }
+                }
+            ]
+        },
+        {
+            "id": "beers",
+            "title": "Bières",
+            "columns": [
+                {
+                    "key": "2.5dl",
+                    "label": "2,5dl"
+                },
+                {
+                    "key": "5dl",
+                    "label": "5dl"
+                },
+                {
+                    "key": "33cl",
+                    "label": "33cl"
+                }
+            ],
+            "show_abv": false,
+            "notes": [],
+            "items": [
+                {
+                    "category": "Bières pression",
+                    "name": "1664",
+                    "prices": {
+                        "2.5dl": 3.5,
+                        "5dl": 6
+                    }
+                },
+                {
+                    "category": "Bières pression",
+                    "name": "1664 Blanc",
+                    "prices": {
+                        "2.5dl": 4,
+                        "5dl": 7
+                    }
+                },
+                {
+                    "category": "Bières pression",
+                    "name": "Schneider Weisse Helle",
+                    "prices": {
+                        "2.5dl": 4.5,
+                        "5dl": 7.5
+                    }
+                },
+                {
+                    "category": "Bières pression",
+                    "name": "Guinness IPA",
+                    "prices": {
+                        "2.5dl": 4.5,
+                        "5dl": 8
+                    }
+                },
+                {
+                    "category": "Bières pression",
+                    "name": "Guinness",
+                    "prices": {
+                        "2.5dl": 4.5,
+                        "5dl": 8
+                    }
+                },
+                {
+                    "category": "Bières pression",
+                    "name": "Supplément Picon",
+                    "prices": {
+                        "2.5dl": 1.5,
+                        "5dl": 3
+                    }
+                },
+                {
+                    "category": "Bières bouteille",
+                    "name": "Birra Moretti",
+                    "prices": {
+                        "33cl": 5
+                    }
+                },
+                {
+                    "category": "Bières bouteille",
+                    "name": "Corona",
+                    "prices": {
+                        "33cl": 6
+                    }
+                },
+                {
+                    "category": "Bières bouteille",
+                    "name": "Desperados",
+                    "prices": {
+                        "33cl": 6
+                    }
+                },
+                {
+                    "category": "Bières bouteille",
+                    "name": "Feldschlösschen",
+                    "details": "sans alcool",
+                    "prices": {
+                        "33cl": 3.5
+                    }
+                },
+                {
+                    "category": "Bières bouteille",
+                    "name": "Leffe",
+                    "details": "blonde / brune",
+                    "prices": {
+                        "33cl": 6
+                    }
+                },
+                {
+                    "category": "Bières bouteille",
+                    "name": "Magners",
+                    "details": "cidre",
+                    "prices": {
+                        "33cl": 7
+                    }
+                },
+                {
+                    "category": "Bières bouteille",
+                    "name": "Somersby",
+                    "details": "cidre",
+                    "prices": {
+                        "33cl": 6
+                    }
+                }
+            ]
+        },
+        {
+            "id": "aperitifs",
+            "title": "Apéritifs",
+            "columns": [
+                {
+                    "key": "2cl",
+                    "label": "2cl"
+                },
+                {
+                    "key": "27.5cl",
+                    "label": "27,5cl"
+                }
+            ],
+            "show_abv": true,
+            "notes": [
+                "_notes.mixer_not_included"
+            ],
+            "items": [
+                {
+                    "category": "Anisés",
+                    "name": "Absinthe",
+                    "abv": 53,
+                    "prices": {
+                        "2cl": 4.5
+                    }
+                },
+                {
+                    "category": "Anisés",
+                    "name": "Pastis, Ricard",
+                    "abv": 45,
+                    "prices": {
+                        "2cl": 3.5
+                    }
+                },
+                {
+                    "category": "Anisés",
+                    "name": "Pontarlier",
+                    "abv": 45,
+                    "prices": {
+                        "2cl": 3.5
+                    }
+                },
+                {
+                    "category": "Autres",
+                    "name": "Campari",
+                    "abv": 25,
+                    "mixer_not_included": true,
+                    "prices": {
+                        "2cl": null
+                    }
+                },
+                {
+                    "category": "Autres",
+                    "name": "Martini",
+                    "details": "blanc / rouge",
+                    "abv": 15,
+                    "mixer_not_included": true,
+                    "prices": {
+                        "2cl": null
+                    }
+                },
+                {
+                    "category": "Autres",
+                    "name": "Porto",
+                    "abv": 19.5,
+                    "prices": {
+                        "2cl": null
+                    }
+                },
+                {
+                    "category": "Autres",
+                    "name": "Smirnoff Ice",
+                    "abv": 4,
+                    "prices": {
+                        "27.5cl": null
+                    }
+                },
+                {
+                    "category": "Autres",
+                    "name": "Suze",
+                    "abv": 20,
+                    "mixer_not_included": true,
+                    "prices": {
+                        "2cl": null
+                    }
+                }
+            ]
+        },
+        {
+            "id": "spirits",
+            "title": "Spiritueux",
+            "columns": [
+                {
+                    "key": "2cl",
+                    "label": "2cl"
+                },
+                {
+                    "key": "4cl",
+                    "label": "4cl"
+                }
+            ],
+            "show_abv": true,
+            "notes": [
+                "_notes.mixer_not_included",
+                "_notes.non_alcoholic"
+            ],
+            "items": [
+                {
+                    "category": "Gin",
+                    "name": "Gordon's",
+                    "abv": 37.5,
+                    "prices": {
+                        "2cl": 3
+                    }
+                },
+                {
+                    "category": "Gin",
+                    "name": "Tanqueray",
+                    "abv": 47.3,
+                    "non_alcoholic_available": true,
+                    "prices": {
+                        "2cl": 3.5
+                    }
+                },
+                {
+                    "category": "Gin",
+                    "name": "Tanqueray Ten",
+                    "abv": 47.3,
+                    "prices": {
+                        "2cl": 4
+                    }
+                },
+                {
+                    "category": "Gin",
+                    "name": "Tanqueray Rangpur",
+                    "abv": 41.3,
+                    "prices": {
+                        "2cl": 3.5
+                    }
+                },
+                {
+                    "category": "Gin",
+                    "name": "Tanqueray Sevilla",
+                    "abv": 41.3,
+                    "prices": {
+                        "2cl": 3.5
+                    }
+                },
+                {
+                    "category": "Gin",
+                    "name": "Hendrick's",
+                    "abv": 41.4,
+                    "prices": {
+                        "2cl": 4
+                    }
+                },
+                {
+                    "category": "Rhum",
+                    "name": "Captain Morgan",
+                    "abv": 35,
+                    "non_alcoholic_available": true,
+                    "prices": {
+                        "2cl": 3,
+                        "4cl": 6
+                    }
+                },
+                {
+                    "category": "Rhum",
+                    "name": "Havana",
+                    "details": "brun",
+                    "abv": 40,
+                    "prices": {
+                        "2cl": 3.5,
+                        "4cl": 7
+                    }
+                },
+                {
+                    "category": "Rhum",
+                    "name": "Pampero",
+                    "details": "blanc",
+                    "abv": 37.5,
+                    "prices": {
+                        "2cl": 3,
+                        "4cl": 6
+                    }
+                },
+                {
+                    "category": "Rhum",
+                    "name": "Pampero",
+                    "details": "brun",
+                    "abv": 40,
+                    "prices": {
+                        "2cl": 3,
+                        "4cl": 6
+                    }
+                },
+                {
+                    "category": "Rhum",
+                    "name": "Diplomatico",
+                    "abv": 40,
+                    "prices": {
+                        "2cl": 6,
+                        "4cl": 10
+                    }
+                },
+                {
+                    "category": "Rhum",
+                    "name": "Zacapa",
+                    "abv": 40,
+                    "prices": {
+                        "2cl": 6,
+                        "4cl": 10
+                    }
+                },
+                {
+                    "category": "Vodka",
+                    "name": "Smirnoff",
+                    "abv": 40,
+                    "prices": {
+                        "2cl": 3,
+                        "4cl": 6
+                    }
+                },
+                {
+                    "category": "Vodka",
+                    "name": "Trojka pink",
+                    "abv": 17,
+                    "prices": {
+                        "2cl": 3,
+                        "4cl": 6
+                    }
+                },
+                {
+                    "category": "Vodka",
+                    "name": "Trojka verte",
+                    "abv": 17,
+                    "prices": {
+                        "2cl": 3,
+                        "4cl": 6
+                    }
+                },
+                {
+                    "category": "Whisky",
+                    "name": "Jack Daniels",
+                    "abv": 40,
+                    "prices": {
+                        "2cl": 4,
+                        "4cl": 7
+                    }
+                },
+                {
+                    "category": "Whisky",
+                    "name": "Jameson",
+                    "abv": 40,
+                    "prices": {
+                        "2cl": 3,
+                        "4cl": 6
+                    }
+                },
+                {
+                    "category": "Whisky",
+                    "name": "Johnnie Walker Red Label",
+                    "abv": 40,
+                    "prices": {
+                        "2cl": 3,
+                        "4cl": 6
+                    }
+                },
+                {
+                    "category": "Whisky",
+                    "name": "Johnnie Walker Black Label",
+                    "abv": 40,
+                    "prices": {
+                        "2cl": 4,
+                        "4cl": 8
+                    }
+                },
+                {
+                    "category": "Whisky",
+                    "name": "Talisker",
+                    "abv": 45.8,
+                    "prices": {
+                        "2cl": 6,
+                        "4cl": 10
+                    }
+                },
+                {
+                    "category": "Whisky",
+                    "name": "Cragganmore",
+                    "abv": 40,
+                    "prices": {
+                        "2cl": 6,
+                        "4cl": 10
+                    }
+                },
+                {
+                    "category": "Whisky",
+                    "name": "Dalwhinnie",
+                    "abv": 43,
+                    "prices": {
+                        "2cl": 6,
+                        "4cl": 10
+                    }
+                },
+                {
+                    "category": "Whisky",
+                    "name": "Lagavulin",
+                    "abv": 43,
+                    "prices": {
+                        "2cl": 6,
+                        "4cl": 10
+                    }
+                },
+                {
+                    "category": "Whisky",
+                    "name": "Glenkichie",
+                    "abv": 43,
+                    "prices": {
+                        "2cl": 6,
+                        "4cl": 10
+                    }
+                },
+                {
+                    "category": "Whisky",
+                    "name": "Oban",
+                    "abv": 43,
+                    "prices": {
+                        "2cl": 6,
+                        "4cl": 10
+                    }
+                }
+            ]
+        },
+        {
+            "id": "liqueurs",
+            "title": "Liqueurs",
+            "columns": [
+                {
+                    "key": "2cl",
+                    "label": "2cl"
+                },
+                {
+                    "key": "4cl",
+                    "label": "4cl"
+                }
+            ],
+            "show_abv": true,
+            "notes": [
+                "_notes.mixer_not_included"
+            ],
+            "items": [
+                {
+                    "name": "Amaretto",
+                    "abv": 28,
+                    "prices": {
+                        "2cl": 3,
+                        "4cl": 6
+                    }
+                },
+                {
+                    "name": "Bailey's",
+                    "abv": 17,
+                    "prices": {
+                        "2cl": 3,
+                        "4cl": 6
+                    }
+                },
+                {
+                    "name": "Get 27",
+                    "abv": 21,
+                    "prices": {
+                        "2cl": 3,
+                        "4cl": 6
+                    }
+                },
+                {
+                    "name": "Jägermeister",
+                    "abv": 35,
+                    "prices": {
+                        "2cl": 3,
+                        "4cl": 6
+                    }
+                },
+                {
+                    "name": "Karibo White Peach",
+                    "abv": 24,
+                    "prices": {
+                        "2cl": 3,
+                        "4cl": 6
+                    }
+                },
+                {
+                    "name": "Limoncello",
+                    "abv": 25,
+                    "prices": {
+                        "2cl": 3,
+                        "4cl": 6
+                    }
+                },
+                {
+                    "name": "Prunelle de Bourgogne",
+                    "abv": 35,
+                    "prices": {
+                        "2cl": 3,
+                        "4cl": 6
+                    }
+                },
+                {
+                    "name": "Tucano Coquito",
+                    "abv": 20,
+                    "prices": {
+                        "2cl": 3,
+                        "4cl": 6
+                    }
+                },
+                {
+                    "name": "Tucano Passion",
+                    "abv": 20,
+                    "prices": {
+                        "2cl": 3,
+                        "4cl": 6
+                    }
+                },
+                {
+                    "name": "Vieille Poire",
+                    "abv": 40,
+                    "prices": {
+                        "2cl": 4,
+                        "4cl": 8
+                    }
+                },
+                {
+                    "name": "Vieille Prune",
+                    "abv": 40,
+                    "prices": {
+                        "2cl": 4,
+                        "4cl": 8
+                    }
+                }
+            ]
+        },
+        {
+            "id": "fruit_brandies",
+            "title": "Eaux-de-vie",
+            "columns": [
+                {
+                    "key": "2cl",
+                    "label": "2cl"
+                },
+                {
+                    "key": "4cl",
+                    "label": "4cl"
+                }
+            ],
+            "show_abv": true,
+            "notes": [],
+            "items": [
+                {
+                    "name": "Abricotine",
+                    "details": "Morand",
+                    "abv": 37.5,
+                    "prices": {
+                        "2cl": 4,
+                        "4cl": 8
+                    }
+                },
+                {
+                    "name": "Cognac",
+                    "details": "Rémy Martin",
+                    "abv": 40,
+                    "prices": {
+                        "2cl": 4,
+                        "4cl": 8
+                    }
+                },
+                {
+                    "name": "Grappa",
+                    "details": "Fior di vite",
+                    "abv": 40,
+                    "prices": {
+                        "2cl": 3,
+                        "4cl": 6
+                    }
+                },
+                {
+                    "name": "Gentiane",
+                    "abv": 37.5,
+                    "prices": {
+                        "2cl": 3,
+                        "4cl": 6
+                    }
+                },
+                {
+                    "name": "Pomme",
+                    "abv": 37.5,
+                    "prices": {
+                        "2cl": 3,
+                        "4cl": 6
+                    }
+                },
+                {
+                    "name": "Williamine",
+                    "details": "Morand",
+                    "abv": 43,
+                    "prices": {
+                        "2cl": 4,
+                        "4cl": 8
+                    }
+                }
+            ]
+        },
+        {
+            "id": "cocktails",
+            "title": "Cocktails",
+            "columns": [
+                {
+                    "key": "single",
+                    "label": ""
+                }
+            ],
+            "show_abv": false,
+            "notes": [
+                "_notes.non_alcoholic"
+            ],
+            "items": [
+                {
+                    "name": "Aile de Coyote",
+                    "base": "Tucano Passion",
+                    "prices": {
+                        "single": 7
+                    }
+                },
+                {
+                    "name": "Aperol Spritz",
+                    "base": "Aperol",
+                    "prices": {
+                        "single": 6
+                    }
+                },
+                {
+                    "name": "Bloody Mary",
+                    "base": "Vodka",
+                    "non_alcoholic_available": true,
+                    "prices": {
+                        "single": 9
+                    }
+                },
+                {
+                    "name": "Caïpirinha / fraise",
+                    "base": "Cachaça",
+                    "prices": {
+                        "single": 10
+                    }
+                },
+                {
+                    "name": "Caïpiroska / fraise",
+                    "base": "Vodka",
+                    "prices": {
+                        "single": 10
+                    }
+                },
+                {
+                    "name": "Caribbean Mule",
+                    "base": "Rhum",
+                    "prices": {
+                        "single": 9
+                    }
+                },
+                {
+                    "name": "Espresso Martini",
+                    "base": "Vodka",
+                    "prices": {
+                        "single": 10
+                    }
+                },
+                {
+                    "name": "Hugo",
+                    "base": "Prosecco",
+                    "prices": {
+                        "single": 7
+                    }
+                },
+                {
+                    "name": "London Mule",
+                    "base": "Gin",
+                    "prices": {
+                        "single": 9
+                    }
+                },
+                {
+                    "name": "Long Island Iced Tea",
+                    "base": "Mixe",
+                    "prices": {
+                        "single": 10
+                    }
+                },
+                {
+                    "name": "Mojito / fraise",
+                    "base": "Rhum",
+                    "non_alcoholic_available": true,
+                    "prices": {
+                        "single": 10
+                    }
+                },
+                {
+                    "name": "Moscow Mule",
+                    "base": "Vodka",
+                    "non_alcoholic_available": true,
+                    "prices": {
+                        "single": 9
+                    }
+                },
+                {
+                    "name": "Old Fashioned",
+                    "base": "Bourbon",
+                    "prices": {
+                        "single": 10
+                    }
+                },
+                {
+                    "name": "Orgasme",
+                    "base": "K. white peach",
+                    "prices": {
+                        "single": 7
+                    }
+                },
+                {
+                    "name": "Pimm's",
+                    "base": "Pimm's",
+                    "prices": {
+                        "single": 7
+                    }
+                },
+                {
+                    "name": "Piña Colada",
+                    "base": "Rhum",
+                    "non_alcoholic_available": true,
+                    "prices": {
+                        "single": 10
+                    }
+                },
+                {
+                    "name": "Russe Blanc",
+                    "base": "Vodka",
+                    "prices": {
+                        "single": 9
+                    }
+                },
+                {
+                    "name": "Tequila Sunrise",
+                    "base": "Tequila",
+                    "prices": {
+                        "single": 5
+                    }
+                },
+                {
+                    "name": "Tom Collins",
+                    "base": "Gin",
+                    "prices": {
+                        "single": 9
+                    }
+                }
+            ]
+        },
+        {
+            "id": "shots",
+            "title": "Shots",
+            "columns": [
+                {
+                    "key": "2cl",
+                    "label": "2cl"
+                },
+                {
+                    "key": "Mètre",
+                    "label": "Mètre"
+                }
+            ],
+            "show_abv": true,
+            "notes": [],
+            "items": [
+                {
+                    "name": "B 52",
+                    "prices": {
+                        "2cl": 4,
+                        "Mètre": 40
+                    }
+                },
+                {
+                    "name": "Berliner Luft",
+                    "abv": 18,
+                    "prices": {
+                        "2cl": 3,
+                        "Mètre": 30
+                    }
+                },
+                {
+                    "name": "Blow Job",
+                    "prices": {
+                        "2cl": 4,
+                        "Mètre": 40
+                    }
+                },
+                {
+                    "name": "Frangelico",
+                    "abv": 20,
+                    "prices": {
+                        "2cl": 3,
+                        "Mètre": 30
+                    }
+                },
+                {
+                    "name": "Get 27",
+                    "abv": 21,
+                    "prices": {
+                        "2cl": 3,
+                        "Mètre": 30
+                    }
+                },
+                {
+                    "name": "Gold Strike",
+                    "abv": 50,
+                    "prices": {
+                        "2cl": 4,
+                        "Mètre": 40
+                    }
+                },
+                {
+                    "name": "Jägermeister",
+                    "abv": 35,
+                    "prices": {
+                        "2cl": 3,
+                        "Mètre": 30
+                    }
+                },
+                {
+                    "name": "Kamikaze",
+                    "note": "-> Shaker",
+                    "prices": {
+                        "Mètre": 30
+                    }
+                },
+                {
+                    "name": "Kisscool",
+                    "prices": {
+                        "2cl": 4,
+                        "Mètre": 40
+                    }
+                },
+                {
+                    "name": "Sambuca",
+                    "abv": 40,
+                    "prices": {
+                        "2cl": 3,
+                        "Mètre": 30
+                    }
+                },
+                {
+                    "name": "Tequila",
+                    "abv": 38,
+                    "prices": {
+                        "2cl": 3,
+                        "Mètre": 30
+                    }
+                },
+                {
+                    "name": "Papa Noël",
+                    "abv": 15,
+                    "prices": {
+                        "2cl": 3.5,
+                        "Mètre": 35
+                    }
+                },
+                {
+                    "name": "Ti-Punch",
+                    "prices": {
+                        "2cl": 4,
+                        "Mètre": 40
+                    }
+                },
+                {
+                    "name": "Vodka Caramel",
+                    "prices": {
+                        "2cl": 3,
+                        "Mètre": 30
+                    }
+                },
+                {
+                    "name": "Vodka Fraise (Xuxu)",
+                    "abv": 15,
+                    "prices": {
+                        "2cl": 3,
+                        "Mètre": 30
+                    }
+                },
+                {
+                    "name": "Vodka Pink",
+                    "abv": 17,
+                    "prices": {
+                        "2cl": 3,
+                        "Mètre": 30
+                    }
+                },
+                {
+                    "name": "Vodka Porn",
+                    "abv": 40,
+                    "prices": {
+                        "2cl": 3.5,
+                        "Mètre": 35
+                    }
+                },
+                {
+                    "name": "Vodka Verte",
+                    "abv": 17,
+                    "prices": {
+                        "2cl": 3,
+                        "Mètre": 30
+                    }
+                },
+                {
+                    "name": "Zekilla",
+                    "abv": 20,
+                    "prices": {
+                        "2cl": 3,
+                        "Mètre": 30
+                    }
+                }
+            ]
+        },
+        {
+            "id": "platters",
+            "title": "Planchettes Apéro",
+            "columns": [
+                {
+                    "key": "single",
+                    "label": ""
+                }
+            ],
+            "show_abv": false,
+            "notes": [
+                "_notes.platters",
+                "_notes.allergens",
+                "_notes.origins"
+            ],
+            "items": [
+                {
+                    "name": "Viande séchée",
+                    "weight": "75g",
+                    "prices": {
+                        "single": 9
+                    }
+                },
+                {
+                    "name": "Lard sec",
+                    "weight": "150g",
+                    "prices": {
+                        "single": 9
+                    }
+                },
+                {
+                    "name": "Saucisse à l'ail",
+                    "weight": "150g",
+                    "prices": {
+                        "single": 9
+                    }
+                },
+                {
+                    "name": "Saucisse fumée",
+                    "weight": "150g",
+                    "prices": {
+                        "single": 9
+                    }
+                },
+                {
+                    "name": "Saucisse de cheval",
+                    "weight": "150g",
+                    "prices": {
+                        "single": 9
+                    }
+                },
+                {
+                    "name": "Tomme nature / cumin",
+                    "weight": "100g",
+                    "prices": {
+                        "single": 6
+                    }
+                }
+            ]
+        }
+    ]
+}
