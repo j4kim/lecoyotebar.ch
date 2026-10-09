@@ -86,6 +86,8 @@ class PageSeeder extends Seeder
                 # Mail envoyé
 
                 Tout bon, merci pour ton message, on le lira !
+
+                [Super](/)
                 MD
         ]);
     }

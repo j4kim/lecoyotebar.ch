@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Mail;
 
 class ContactFormMessage extends Model
 {
-    public static function createAndSend(Request $request): ContactFormSubmission
+    public static function createAndSend(Request $request): self
     {
         $sendTo = $request->has('send_to') ? decrypt($request->send_to) : config('mail.from.address');
         $contactFormMessage = self::create([
@@ -20,6 +20,6 @@ class ContactFormMessage extends Model
         ]);
         $mail = new ContactFormSubmission($contactFormMessage);
         defer(fn() => Mail::to($sendTo)->send($mail));
-        return $mail;
+        return $contactFormMessage;
     }
 }

@@ -33,8 +33,13 @@ Route::post('/submit-contact-form/{contactFormName}', function (Request $request
         $rules['cf-turnstile-response'] = ['required', new Turnstile];
     }
     $request->validate($rules);
-    $mail = ContactFormMessage::createAndSend($request);
-    return $mail;
+    ContactFormMessage::createAndSend($request);
+    $page = Page::where('name', 'mail-sent')->first();
+    if ($page) {
+        return redirect()->route('page', [$page->name]);
+    } else {
+        return 'Message envoyé, merci ! Vous pouvez fermer cette page.';
+    }
 })
     ->middleware('throttle:2,1')
     ->middleware(ProtectAgainstSpam::class)
