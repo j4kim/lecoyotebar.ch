@@ -7,11 +7,5 @@
     @else
         {{ $slot }}
     @endif
-    @if ($errors->has($attributes->get('name')))
-        @foreach ($errors->get($attributes->get('name')) as $error)
-            <div class="validation-error text-error">
-                {{ $error }}
-            </div>
-        @endforeach
-    @endif
+    <x-atoms.validation-error :name="$attributes->get('name')" />
 </label>
