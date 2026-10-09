@@ -27,6 +27,10 @@ const MENU_ITEMS = [
         "text" => "Carte",
         "to" => "#carte",
     ],
+    [
+        "text" => "Contact",
+        "to" => "#contact",
+    ],
 ];
 
 const WELCOME_BLOCK_RICH_CONTENT = [
