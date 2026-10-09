@@ -717,3 +717,127 @@ const CONTACT_CONTENT = [
         ],
     ],
 ];
+
+
+const FOOTER_CONTENT = [
+    "type" => "doc",
+    "content" => [
+        [
+            "type" => "paragraph",
+            "attrs" => [
+                "textAlign" => "start",
+            ],
+            "content" => [
+                [
+                    "type" => "text",
+                    "text" => "Liens",
+                ],
+            ],
+        ],
+        [
+            "type" => "bulletList",
+            "content" => [
+                [
+                    "type" => "listItem",
+                    "content" => [
+                        [
+                            "type" => "paragraph",
+                            "attrs" => [
+                                "textAlign" => "start",
+                            ],
+                            "content" => [
+                                [
+                                    "type" => "text",
+                                    "marks" => [
+                                        [
+                                            "type" => "link",
+                                            "attrs" => [
+                                                "href" => "https://www.instagram.com/lecoyotebar2300/",
+                                                "target" => "_blank",
+                                                "rel" => null,
+                                                "class" => null,
+                                                "title" => null,
+                                            ],
+                                        ],
+                                    ],
+                                    "text" => "@lecoyotebar2300",
+                                ],
+                                [
+                                    "type" => "text",
+                                    "text" => " sur Instagram",
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+                [
+                    "type" => "listItem",
+                    "content" => [
+                        [
+                            "type" => "paragraph",
+                            "attrs" => [
+                                "textAlign" => "start",
+                            ],
+                            "content" => [
+                                [
+                                    "type" => "text",
+                                    "marks" => [
+                                        [
+                                            "type" => "link",
+                                            "attrs" => [
+                                                "href" => "https://www.facebook.com/lecoyotebar2300",
+                                                "target" => "_blank",
+                                                "rel" => null,
+                                                "class" => null,
+                                                "title" => null,
+                                            ],
+                                        ],
+                                    ],
+                                    "text" => "Le Coyote Bar",
+                                ],
+                                [
+                                    "type" => "text",
+                                    "text" => " sur Facebook",
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
+];
+
+const FOOTER_CREDITS = [
+    "type" => "doc",
+    "content" => [
+        [
+            "type" => "paragraph",
+            "attrs" => [
+                "textAlign" => "start",
+            ],
+            "content" => [
+                [
+                    "type" => "text",
+                    "text" => "Site créé avec ❤️ par ",
+                ],
+                [
+                    "type" => "text",
+                    "marks" => [
+                        [
+                            "type" => "link",
+                            "attrs" => [
+                                "href" => "https://3sdl.ch",
+                                "target" => "_blank",
+                                "rel" => null,
+                                "class" => null,
+                                "title" => null,
+                            ],
+                        ],
+                    ],
+                    "text" => "3sdl.ch",
+                ],
+            ],
+        ],
+    ],
+];

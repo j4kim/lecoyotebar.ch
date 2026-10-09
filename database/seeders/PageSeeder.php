@@ -75,6 +75,12 @@ class PageSeeder extends Seeder
                     "name" => "spacer",
                     "size" => "lg",
                 ],
+                [
+                    "template" => "footer",
+                    "name" => "footer",
+                    "content" => FOOTER_CONTENT,
+                    "credits" => FOOTER_CREDITS,
+                ],
             ]
         ]);
 
