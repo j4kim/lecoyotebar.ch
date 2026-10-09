@@ -1,6 +1,6 @@
 <x-mail::message
     heading="Nouveau message via le formulaire de contact"
-    subheading="De: {{ $fullName }} ({{ $email }})"
+    subheading="De: {{ $contactFormMessage->fullname }} ({{ $contactFormMessage->email }})"
 >
-    {{ $message }}
+    {{ $contactFormMessage->message }}
 </x-mail::message>

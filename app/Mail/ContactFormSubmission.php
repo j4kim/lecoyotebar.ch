@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Models\ContactFormMessage;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -18,9 +19,7 @@ class ContactFormSubmission extends Mailable
      * Create a new message instance.
      */
     public function __construct(
-        public string $fullName,
-        public string $email,
-        public string $message,
+        public ContactFormMessage $contactFormMessage,
     ) {}
 
     /**
@@ -29,7 +28,7 @@ class ContactFormSubmission extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: "Nouveau message de $this->fullName",
+            subject: "Nouveau message de {$this->contactFormMessage->fullname}",
         );
     }
 

@@ -1,9 +1,8 @@
 <?php
 
-use App\Mail\ContactFormSubmission;
+use App\Models\ContactFormMessage;
 use App\Models\Page;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use RyanChandler\LaravelCloudflareTurnstile\Rules\Turnstile;
 use Spatie\Honeypot\ProtectAgainstSpam;
@@ -34,9 +33,7 @@ Route::post('/submit-contact-form/{contactFormName}', function (Request $request
         $rules['cf-turnstile-response'] = ['required', new Turnstile];
     }
     $request->validate($rules);
-    $sendTo = $request->has('send_to') ? decrypt($request->send_to) : config('mail.from.address');
-    $mail = new ContactFormSubmission($request->fullname, $request->email, $request->message);
-    defer(fn() => Mail::to($sendTo)->send($mail));
+    $mail = ContactFormMessage::createAndSend($request);
     return $mail;
 })
     ->middleware('throttle:2,1')
