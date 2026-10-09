@@ -152,7 +152,7 @@ svg.animated-logo #graphics #darts > g#dart-3 {
 svg.animated-logo :is(#le-coyote-bar, #ton-bar-a-flechettes) > path {
     animation-name: showChar;
     --delay: 1.2s;
-    animation-delay: calc(var(--delay) + (attr(data-delay s) / 20));
+    animation-delay: calc(var(--delay) + (var(--data-delay) * 1s / 20));
     animation-duration: 0.3s;
     animation-timing-function: cubic-bezier(0.669, 0.276, 0.493, 1.438);
 }
