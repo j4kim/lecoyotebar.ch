@@ -7,7 +7,9 @@
     @else
         {{ $slot }}
     @endif
+    @if ($errors->has($attributes->get('name')))
+        <div class="validation-error">
+            @dump($errors->get($attributes->get('name')))
+        </div>
+    @endif
 </label>
-@if ($errors->has($attributes->get('name')))
-    @dump($errors->get($attributes->get('name')))
-@endif
