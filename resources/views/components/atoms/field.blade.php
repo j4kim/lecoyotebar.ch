@@ -1,15 +1,17 @@
 @props(['label'])
 
-<label class="label flex-col items-start">
-    <div>{{ $label }}</div>
+<label class="label flex-col items-start gap-0">
+    <div class="mb-1">{{ $label }}</div>
     @if ($slot->isEmpty())
         <input {{ $attributes->merge(['class' => 'input w-full']) }} />
     @else
         {{ $slot }}
     @endif
     @if ($errors->has($attributes->get('name')))
-        <div class="validation-error">
-            @dump($errors->get($attributes->get('name')))
-        </div>
+        @foreach ($errors->get($attributes->get('name')) as $error)
+            <div class="validation-error text-error">
+                {{ $error }}
+            </div>
+        @endforeach
     @endif
 </label>

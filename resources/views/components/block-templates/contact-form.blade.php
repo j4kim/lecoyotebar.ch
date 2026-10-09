@@ -13,6 +13,8 @@
             name="fullname"
             label="Nom complet"
             autocomplete="name"
+            value="{{ old('fullname') }}"
+            required
         />
 
         <x-atoms.field
@@ -20,6 +22,8 @@
             label="Email"
             type="email"
             autocomplete="email"
+            value="{{ old('email') }}"
+            required
         />
 
         <x-atoms.field
@@ -31,7 +35,8 @@
                 type="text"
                 class="textarea w-full"
                 maxlength="2000"
-            ></textarea>
+                required
+            >{{ old('message') }}</textarea>
         </x-atoms.field>
         <button class="btn btn-primary">Envoyer</button>
     </fieldset>
