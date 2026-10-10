@@ -36,6 +36,19 @@
     @apply font-bold;
 }
 
+/* VIDEO */
+
+/* Masque le bouton de lecture central au chargement */
+video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none;
+}
+
+/* Optionnel : Masque l'ensemble des contrôles natifs si vous utilisez vos propres boutons */
+video::-webkit-media-controls {
+    display: none !important;
+}
+
 /* LOGO ANIMATION */
 
 svg.animated-logo * {
