@@ -17,7 +17,7 @@
         >
     @endisset
 
-    <fieldset class="fieldset bg-base-200 border-base-300 rounded-box mx-auto max-w-3xl gap-4 border p-4">
+    <fieldset class="fieldset bg-base-200 border-base-300 md:rounded-box mx-auto max-w-3xl gap-4 border p-4">
         <legend class="fieldset-legend">{{ @$block['title'] }}</legend>
 
         <x-atoms.field
